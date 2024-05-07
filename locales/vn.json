@@ -1,4 +1,8 @@
 {
   "brandName": "biziibee",
-  "brandSlogan": "MC của bạn"
+  "brandSlogan": "MC của bạn",
+  "errorMessages": {
+    "not_found": "Không tìm thấy trang",
+    "generic_error": "Lỗi máy chủ"
+  }
 }

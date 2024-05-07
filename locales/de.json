@@ -1,4 +1,8 @@
 {
   "brandName": "biziibee",
-  "brandSlogan": "Dein MC"
+  "brandSlogan": "Dein MC",
+  "error": {
+    "not_found": "Die Seite konnte nicht gefunden werden",
+    "generic_error": "Ein Fehler ist aufgetreten"
+  }
 }

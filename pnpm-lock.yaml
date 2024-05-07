@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@nuxt/kit':
+        specifier: ^3.11.2
+        version: 3.11.2(rollup@4.17.2)
       '@nuxtjs/i18n':
         specifier: ^8.3.1
         version: 8.3.1(rollup@4.17.2)(vue@3.4.27)
