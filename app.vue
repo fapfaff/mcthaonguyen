@@ -1,5 +1,6 @@
 <template>
   <h1 class="text-3xl font-bold underline">
-    Hello world!
+    {{ $t('brandName') }}
   </h1>
+  <p>{{ $t('brandSlogan') }}</p>
 </template>
