@@ -8,3 +8,8 @@
         text: String
     })
 </script>
+<style scoped>
+    h1 {
+        font-family: 'Playfair Display';
+    }
+</style>

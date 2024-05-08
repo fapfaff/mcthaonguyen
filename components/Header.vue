@@ -58,6 +58,9 @@ function toggleLang() {
 </script>
 
 <style scoped>
+header {
+  font-family: "Playfair Display";
+}
 .collapsible-menu {
   overflow: hidden;
   max-height: 0;

@@ -44,6 +44,7 @@
   /* Full Screen - Header + Image */
   height: calc(100vh - var(--header-height, 5vh));
   box-sizing: border-box;
+  font-family: "Playfair Display";
 }
 
 .border-img-container img {
