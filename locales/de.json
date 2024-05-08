@@ -9,7 +9,8 @@
     "menu": "Menü",
     "language": "Sprache"
   },
-  "headings": {
+  "route": {
+    "home": "Start",
     "testimonials": "Referenzen",
     "services": "Leistungen",
     "about_me": "Über mich",

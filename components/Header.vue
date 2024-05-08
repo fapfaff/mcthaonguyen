@@ -15,12 +15,9 @@
           <nav v-if="isNavExpanded"
             class="flex flex-row justify-around"
           >
-            <p
-              v-for="item in ['About', 'Services', 'Contact']"
-              class="text-black leading-3 p-1"
-            >
-              {{ item }}
-            </p>
+            <NuxtLink v-for="route in menuRoutes" :key="route.path" :to="localePath(route.path)" @click="handleRouting()">
+                <p class="text-black leading-3 p-1">{{ $t(`route.${route.name}`) }}</p>
+            </NuxtLink>
           </nav>
           <div v-if="isLangExpanded" class="flex flex-row justify-around">
             <NuxtLink v-for="locale in locales" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
@@ -33,8 +30,12 @@
   <div class="w-full h-14 -z-50 bg-transparent"></div>
 </template>
 <script setup>
+import routes from '~/utils/routes';
+const menuRoutes = routes.filter(route => route.show == true);
+
 const { locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 
 // State for navigation and language expand controls
 const isNavExpanded = ref(false);
@@ -54,6 +55,10 @@ function toggleNav() {
 function toggleLang() {
   isNavExpanded.value = false;
   isLangExpanded.value = !isLangExpanded.value;
+}
+
+function handleRouting() {
+  isNavExpanded.value = false;
 }
 </script>
 

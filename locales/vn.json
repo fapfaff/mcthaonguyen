@@ -9,7 +9,8 @@
     "menu": "Menu",
     "language": "Ngôn ngữ"
   },
-  "headings": {
+  "route": {
+    "home": "Trang chủ",
     "testimonials": "Nhận xét",
     "services": "Dịch vụ",
     "about_me": "Về tôi",
