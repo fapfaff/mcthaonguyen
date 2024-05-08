@@ -7,9 +7,14 @@
       >
         <!-- Circle -->
         <div
-          class="circle border-rose-200 border-2 flex items-center justify-center"
+          class="circle border-red-200 border-2 flex items-center justify-center"
         >
-          <div class="inner-circle bg-rose-200"></div>
+          <div class="inner-circle bg-red-200 overflow-hidden">
+            <img
+              src="@/assets/img/nguyen_ao_dai.webp"
+              alt="Picture of Nguyen"
+            />
+          </div>
         </div>
         <!-- Text -->
         <div class="flex flex-col justify-center space-y-2 md:space-y-6">
@@ -52,7 +57,7 @@
 }
 
 .circle {
-  --circle-size: 30vh;
+  --circle-size: 45vh;
 
   height: calc(var(--circle-size) + var(--circle-size) / 15);
   width: calc(var(--circle-size) + var(--circle-size) / 15);
