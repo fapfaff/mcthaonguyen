@@ -5,7 +5,16 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   i18n: {
     strategy: "prefix",
-    locales: ["de", "vn"],
+    locales: [
+      {
+        code: "de",
+        name: "Deutsch",
+      },
+      {
+        code: "vn",
+        name: "Tiếng Việt",
+      },
+    ],
     defaultLocale: "de",
   },
 });

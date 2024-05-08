@@ -4,5 +4,9 @@
   "error": {
     "not_found": "Die Seite konnte nicht gefunden werden",
     "generic_error": "Ein Fehler ist aufgetreten"
+  },
+  "header": {
+    "menu": "Menü",
+    "language": "Sprache"
   }
 }

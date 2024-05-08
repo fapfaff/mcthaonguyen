@@ -4,5 +4,9 @@
   "errorMessages": {
     "not_found": "Không tìm thấy trang",
     "generic_error": "Lỗi máy chủ"
+  },
+  "header": {
+    "menu": "Menu",
+    "language": "Ngôn ngữ"
   }
 }
