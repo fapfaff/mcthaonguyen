@@ -1,11 +1,26 @@
 <template>
   <div class="hero flex flex-col">
-    <div class="flex-grow">
-      <h1 class="text-3xl font-bold underline">
-        {{ $t("brandName") }}
-      </h1>
-      <p>{{ $t("brandSlogan") }}</p>
+    <!-- Actual hero content -->
+    <div class="flex-grow flex items-center justify-center">
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-5 md:space-x-10"
+      >
+        <!-- Circle -->
+        <div
+          class="circle border-rose-200 border-2 flex items-center justify-center"
+        >
+          <div class="inner-circle bg-rose-200"></div>
+        </div>
+        <!-- Text -->
+        <div class="flex flex-col justify-center space-y-2 md:space-y-6">
+          <h1 class="text-3xl md:text-8xl font-bold underline text-center">
+            {{ $t("brandName") }}
+          </h1>
+          <p class="text-center text-xl md:text-4xl">{{ $t("brandSlogan") }}</p>
+        </div>
+      </div>
     </div>
+    <!-- Floral decoration -->
     <div class="border-img-container flex flex-row justify-between">
       <img
         src="@/assets/img/flower_border_side.webp"
@@ -34,6 +49,20 @@
 
 .border-img-container img:nth-child(2) {
   transform: scaleX(-1);
+}
+
+.circle {
+  --circle-size: 30vh;
+
+  height: calc(var(--circle-size) + var(--circle-size) / 15);
+  width: calc(var(--circle-size) + var(--circle-size) / 15);
+  border-radius: 100%;
+}
+
+.inner-circle {
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border-radius: 100%;
 }
 </style>
 <script>
