@@ -3,8 +3,18 @@
     <!-- Actual hero content -->
     <div class="flex-grow flex items-center justify-center">
       <div
-        class="flex flex-col md:flex-row justify-center space-y-5 md:space-x-10"
+        class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-x-10"
       >
+        <div>
+          <p class="md:hidden text-lg text-center text-amber-800">
+            {{ $t("hero.mc_service") }}
+          </p>
+          <h1
+            class="md:hidden text-4xl font-bold text-center tracking-widest"
+          >
+            {{ $t("brand_name") }}
+          </h1>
+        </div>
         <!-- Circle -->
         <div
           class="circle border-red-200 border-2 flex items-center justify-center"
@@ -18,10 +28,20 @@
         </div>
         <!-- Text -->
         <div class="flex flex-col justify-center space-y-2 md:space-y-6">
-          <h1 class="text-3xl md:text-8xl font-bold underline text-center">
-            {{ $t("brandName") }}
+          <div class="hidden md:block mb-14">
+            <p class="text-4xl text-center text-amber-800">
+              {{ $t("hero.mc_service") }}
+            </p>
+            <h1
+            class="md:visible block text-3xl md:text-8xl font-bold underline text-center tracking-wider"
+          >
+            {{ $t("brand_name") }}
           </h1>
-          <p class="text-center text-xl md:text-4xl">{{ $t("brandSlogan") }}</p>
+          </div>
+          
+          <p class="text-center text-xl md:text-4xl">
+            {{ $t("brand_slogan") }}
+          </p>
         </div>
       </div>
     </div>

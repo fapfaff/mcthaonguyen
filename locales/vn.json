@@ -1,6 +1,6 @@
 {
-  "brandName": "biziibee",
-  "brandSlogan": "MC của bạn",
+  "brand_name": "biziibee",
+  "brand_slogan": "MC của bạn cho các sự kiện Đức-Việt",
   "errorMessages": {
     "not_found": "Không tìm thấy trang",
     "generic_error": "Lỗi máy chủ"
@@ -14,5 +14,8 @@
     "services": "Dịch vụ",
     "about_me": "Về tôi",
     "contact": "Liên hệ"
+  },
+  "hero": {
+    "mc_service": "MC Service"
   }
 }

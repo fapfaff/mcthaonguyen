@@ -1,6 +1,6 @@
 {
-  "brandName": "biziibee",
-  "brandSlogan": "Dein MC",
+  "brand_name": "biziibee",
+  "brand_slogan": "Dein MC für deutsch-vietnamesische Events",
   "error": {
     "not_found": "Die Seite konnte nicht gefunden werden",
     "generic_error": "Ein Fehler ist aufgetreten"
@@ -14,5 +14,8 @@
     "services": "Leistungen",
     "about_me": "Über mich",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "mc_service": "MC Service"
   }
 }
