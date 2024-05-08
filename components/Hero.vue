@@ -71,8 +71,6 @@
 }
 </style>
 <script>
-import { onMounted, ref } from "vue";
-
 export default {
   setup() {
     const headerHeight = ref(0); // Stores the header's height
