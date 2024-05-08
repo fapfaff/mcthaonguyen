@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="bg-amber-100 flex-row content-center justify-center h-screen ml-5 mr-5">
+    <div class="flex-row content-center justify-center h-screen ml-5 mr-5">
       <div class="border-amber-800 border-2 border-solid mb-5 ">
         <h1 class="text-5xl text-center p-2">Error {{ error.statusCode }}</h1>
         <h1 v-if="error.statusCode === 404" class="text-xl text-center p-2">{{ $t("error.not_found") }}</h1>
