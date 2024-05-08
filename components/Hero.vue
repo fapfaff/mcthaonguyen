@@ -6,7 +6,7 @@
         class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-x-10"
       >
         <div>
-          <p class="md:hidden text-lg text-center text-amber-800">
+          <p class="md:hidden text-lg text-center text-muted-gold">
             {{ $t("hero.mc_service") }}
           </p>
           <h1
@@ -17,9 +17,9 @@
         </div>
         <!-- Circle -->
         <div
-          class="circle border-red-200 border-2 flex items-center justify-center"
+          class="circle border-soft-peach border-2 flex items-center justify-center"
         >
-          <div class="inner-circle bg-red-200 overflow-hidden">
+          <div class="inner-circle bg-radial-soft-peach overflow-hidden">
             <img
               src="@/assets/img/nguyen_ao_dai.webp"
               alt="Picture of Nguyen"
@@ -29,7 +29,7 @@
         <!-- Text -->
         <div class="flex flex-col justify-center space-y-2 md:space-y-6">
           <div class="hidden md:block mb-14">
-            <p class="text-4xl text-center text-amber-800">
+            <p class="text-4xl text-center text-muted-gold">
               {{ $t("hero.mc_service") }}
             </p>
             <h1

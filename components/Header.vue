@@ -1,6 +1,6 @@
 <template>
-  <header class="fixed w-screen bg-amber-50 z-50">
-    <div class="w-full flex justify-between text-amber-800">
+  <header class="fixed w-screen bg-ivory z-50">
+    <div class="w-full flex justify-between text-muted-gold">
       <div class="ps-4 pe-4 pt-1 pb-1">
         <button @click="toggleNav()" class="font-semibold">
           {{ $t("header.menu") }}
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div :class="expanded" class="collapsible-menu ps-2 pe-2">
-      <div class="border-amber-800 border-solid border-t border-b">
+      <div class="border-muted-gold border-solid border-t border-b">
           <nav v-if="isNavExpanded"
             class="flex flex-row justify-around"
           >

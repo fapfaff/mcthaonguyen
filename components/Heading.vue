@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-4xl text-amber-800 text-center underline underline-offset-8 tracking-wider">
+    <h1 class="text-4xl text-muted-gold text-center underline underline-offset-8 tracking-wider">
         {{ text }}
     </h1>
 </template>
