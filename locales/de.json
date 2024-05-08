@@ -8,5 +8,11 @@
   "header": {
     "menu": "Menü",
     "language": "Sprache"
+  },
+  "headings": {
+    "testimonials": "Referenzen",
+    "services": "Leistungen",
+    "about_me": "Über mich",
+    "contact": "Kontakt"
   }
 }

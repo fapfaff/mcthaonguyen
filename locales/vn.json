@@ -8,5 +8,11 @@
   "header": {
     "menu": "Menu",
     "language": "Ngôn ngữ"
+  },
+  "headings": {
+    "testimonials": "Nhận xét",
+    "services": "Dịch vụ",
+    "about_me": "Về tôi",
+    "contact": "Liên hệ"
   }
 }
