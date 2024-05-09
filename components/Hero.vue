@@ -3,14 +3,14 @@
     <!-- Actual hero content -->
     <div class="flex-grow flex items-center justify-center">
       <div
-        class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-x-10"
+        class="flex flex-col lg:flex-row justify-center items-center space-y-5 lg:space-x-10"
       >
         <div>
-          <p class="md:hidden text-lg text-center text-muted-gold">
+          <p class="lg:hidden text-lg text-center text-muted-gold">
             {{ $t("hero.mc_service") }}
           </p>
           <h1
-            class="md:hidden text-4xl font-bold text-center tracking-widest"
+            class="lg:hidden text-4xl font-bold text-center tracking-widest"
           >
             {{ $t("brand_name") }}
           </h1>
@@ -27,19 +27,19 @@
           </div>
         </div>
         <!-- Text -->
-        <div class="flex flex-col justify-center space-y-2 md:space-y-6">
-          <div class="hidden md:block mb-14">
+        <div class="flex flex-col justify-center space-y-2 lg:space-y-6">
+          <div class="hidden lg:block mb-14">
             <p class="text-4xl text-center text-muted-gold">
               {{ $t("hero.mc_service") }}
             </p>
             <h1
-            class="md:visible block text-3xl md:text-8xl font-bold underline text-center tracking-wider"
+            class="lg:visible block text-3xl lg:text-8xl font-bold underline text-center tracking-wider"
           >
             {{ $t("brand_name") }}
           </h1>
           </div>
           
-          <p class="text-center text-xl md:text-4xl">
+          <p class="text-center text-xl lg:text-4xl">
             {{ $t("brand_slogan") }}
           </p>
         </div>
@@ -78,7 +78,7 @@
 }
 
 .circle {
-  --circle-size: 45vh;
+  --circle-size: min(45vh, 80vw);
 
   height: calc(var(--circle-size) + var(--circle-size) / 15);
   width: calc(var(--circle-size) + var(--circle-size) / 15);
