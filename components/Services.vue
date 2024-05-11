@@ -5,14 +5,14 @@
     <div class="flex-1">
       <ServiceCard
         src="/icons/wedding_ring.webp"
-        title="Hochzeiten"
+        :title="$t('services.marriages')"
         :description="lorem"
       ></ServiceCard>
     </div>
     <div class="flex-1">
       <ServiceCard
         src="/icons/cake.webp"
-        title="Geburtstag"
+        :title="$t('services.birthdays')"
         :description="loremlorem"
       ></ServiceCard>
     </div>

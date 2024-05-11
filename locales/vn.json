@@ -1,7 +1,7 @@
 {
   "brand_name": "biziibee",
   "brand_slogan": "MC của bạn cho các sự kiện Đức-Việt",
-  "errorMessages": {
+  "error": {
     "not_found": "Không tìm thấy trang",
     "generic_error": "Lỗi máy chủ"
   },
@@ -18,5 +18,9 @@
   },
   "hero": {
     "mc_service": "MC Service"
+  },
+  "services": {
+    "marriages": "Đám cưới",
+    "birthdays": "Sinh nhật"
   }
 }
