@@ -11,6 +11,7 @@
     :text="$t('route.testimonials')"
     class="anchor"
   ></Heading>
+  <Testimonials></Testimonials>
   <div class="h-52"></div>
   <Heading
     id="aboutMe"
