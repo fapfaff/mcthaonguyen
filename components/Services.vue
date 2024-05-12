@@ -1,6 +1,6 @@
 <template>
   <div
-    class="ps-4 pe-4 flex flex-col items-stretch justify-stretch space-y-2 md:flex-row md:space-x-2 md:space-y-0"
+    class="flex flex-col items-stretch justify-stretch space-y-2 md:flex-row md:space-x-2 md:space-y-0"
   >
     <div class="flex-1">
       <ServiceCard

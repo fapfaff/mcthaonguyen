@@ -1,26 +1,29 @@
 <template>
   <Hero></Hero>
-  <Heading
-    id="services"
-    :text="$t('route.services')"
-    class="anchor"
-  ></Heading>
-  <Services></Services>
-  <Heading
-    id="testimonials"
-    :text="$t('route.testimonials')"
-    class="anchor"
-  ></Heading>
-  <Testimonials></Testimonials>
-  <div class="h-52"></div>
-  <Heading
-    id="aboutMe"
-    :text="$t('route.about_me')"
-    class="anchor"
-  ></Heading>
-  <div class="h-52"></div>
-  <Heading id="contact" :text="$t('route.contact')" class="anchor"></Heading>
-  <div class="h-52"></div>
+  <div class="ms-2 me-2">
+    <Heading
+      id="services"
+      :text="$t('route.services')"
+      class="anchor"
+    ></Heading>
+      <Services></Services>
+      <Heading
+      id="testimonials"
+      :text="$t('route.testimonials')"
+      class="anchor"
+    ></Heading>
+    <Testimonials></Testimonials>
+    <div class="h-52"></div>
+    <Heading
+      id="aboutMe"
+      :text="$t('route.about_me')"
+      class="anchor"
+    ></Heading>
+    <div class="h-52"></div>
+    <Heading id="contact" :text="$t('route.contact')" class="anchor"></Heading>
+    <div class="h-52"></div>
+  </div>
+
 </template>
 <style>
 body,
