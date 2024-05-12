@@ -17,24 +17,13 @@
         </Card>
     </div>  
   </div>
-  <div>
-    <div class="w-16 h-16">
-        <button
-            class="text-deep-green font-bold"
-            @click="previousCard"
-            :hidden="currentCardIndex === 0"
-        >
-        ◂
+  <div class="flex flex-row justify-center items-center space-x-1 pt-2">
+        <button v-for="(_, i) in data" :key="i" class="rounded-full border-2 border-muted-gold"
+            :class="i == currentCardIndex ? 'bg-muted-gold h-5 w-5' : 'hover:h-5 hover:w-5 h-4 w-4'"
+            @click="switchToCard(i)"
+            >
         </button>
-        <button
-            class="text-deep-green font-bold"
-            @click="nextCard"
-            :disabled="currentCardIndex === data.length - 1"
-        >   
-        ▸
-        </button>
-    </div>      
-  </div>
+    </div>
 </template>
 <style>
 h1 {
@@ -54,24 +43,17 @@ const contentBox = ref(null);
 
 const testimonial = computed(() => data.value[currentCardIndex.value]);
 
-function nextCard() {
-  if (currentCardIndex.value < data.value.length - 1) {
-    currentCardIndex.value += 1;
+function switchToCard(i) {
+    currentCardIndex.value = i;
     checkIfClamped();
     isExpanded.value = false;
-  }
-}
-
-function previousCard() {
-  if (currentCardIndex.value > 0) {
-    currentCardIndex.value -= 1;
-    checkIfClamped();
-    isExpanded.value = false;
-  }
 }
 
 function toggleExpanded() {
   isExpanded.value = !isExpanded.value;
+  if (!isExpanded.value) {
+    navigateTo('#testimonials')
+  }
 }
 
 const checkIfClamped = () => {
