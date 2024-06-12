@@ -1,20 +1,13 @@
 <template>
   <div class="flex flex-row">
     <div class="ps-4 pe-4 flex-grow">
-        <Card class="ps-2 pe-2 w-full h-fit">
-            <div v-if="testimonial.img" class="w-full pb-5">
-                <img :src="`/testimonials/${testimonial.img}`" class="w-full object-cover aspect-video">
-            </div>
-            <h1 class="text-2xl text-center pb-3">{{  testimonial.title }}</h1>
-            <div ref="contentBox" :class="isExpanded ? '' : 'text-ellipsis overflow-hidden line-clamp-6'">
-                <ContentRendererMarkdown :value="testimonial" />
-            </div>
-            <button class=" text-deep-green font-semibold"
-                @click="toggleExpanded"
-                v-if="isClamped || isExpanded">
-                {{ isExpanded ? 'Show less' : 'Show more' }}
-            </button>
-        </Card>
+        <TestimonialCard
+          :testimonial="testimonial"
+          :isExpanded="isExpanded"
+          :isClamped="isClamped"
+          @toggleExpanded="toggleExpanded"
+        >
+        </TestimonialCard>
     </div>  
   </div>
   <div class="flex flex-row justify-center items-center space-x-1 pt-2">
