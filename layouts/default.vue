@@ -6,6 +6,10 @@
         <!-- Output the page content  -->
         <div>
             <slot />
+            <ModalsContainer />
         </div>
     </div>
 </template>
+<script setup lang="ts">
+import { ModalsContainer } from 'vue-final-modal'
+</script>

@@ -73,6 +73,9 @@ export default {
       backgroundImage: {
         "radial-apricot": "radial-gradient(circle, #FFFFFF 0%, #FFD2BD 100%)",
       },
+      maxHeigth: {
+        "5/6": "83.333333%",
+      },
     },
   },
   plugins: [],

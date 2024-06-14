@@ -11,17 +11,30 @@
         {{ '"' + testimonial.quote + '"' }}
       </p>
       <div class="flex justify-center w-full">
-        <!-- <button class="rounded-full bg-green-600 tect-blue-950 mt-4">
+        <button class="rounded-full bg-green-600 tect-blue-950 mt-4" @click="open">
           <p class="p-1 ps-4 pe-4">Read more</p>
-        </button> -->
+        </button>
       </div>
     </div>
   </Card>
 </template>
 
 <script setup>
+import { useModal } from 'vue-final-modal'
+import TestimonialModal from './TestimonialModal.vue';
+
 const props = defineProps({
   testimonial: Object,
+});
+
+const { open, close } = useModal({
+    component: TestimonialModal,
+    attrs: {
+      testimonial: props.testimonial,
+      onClose() {
+        close()
+      },
+    },
 });
 
 </script>
