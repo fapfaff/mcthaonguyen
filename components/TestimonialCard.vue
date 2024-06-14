@@ -1,38 +1,33 @@
 <template>
-    <Card class="ps-2 pe-2 w-full h-fit">
-      <div v-if="testimonial.img" class="w-full pb-5">
-        <img :src="`/testimonials/${testimonial.img}`" class="w-full object-cover aspect-video">
+  <Card>
+    <div class="pt-2 pb-2">
+      <div v-if="testimonial.img" class="pb-5 flex justify-center w-full">
+        <img
+          :src="`/testimonials/${testimonial.img}`"
+          class="w-4/5 object-cover aspect-video rounded-lg"
+        />
       </div>
-      <h1 class="text-2xl text-center pb-3">{{ testimonial.title }}</h1>
-      <div ref="contentBox" :class="isExpanded ? '' : 'text-ellipsis overflow-hidden line-clamp-6'">
-        <ContentRendererMarkdown :value="testimonial" />
+      <p class="italic text-center text-xl">
+        {{ '"' + testimonial.quote + '"' }}
+      </p>
+      <div class="flex justify-center w-full">
+        <!-- <button class="rounded-full bg-green-600 tect-blue-950 mt-4">
+          <p class="p-1 ps-4 pe-4">Read more</p>
+        </button> -->
       </div>
-      <button class="text-deep-green font-semibold" @click="toggleExpanded" v-if="isClamped || isExpanded">
-        {{ isExpanded ? 'Show less' : 'Show more' }}
-      </button>
-    </Card>
-  </template>
-  
-  <script setup>
-  const props = defineProps({
-    testimonial: Object,
-    isExpanded: Boolean,
-    isClamped: Boolean
-  });
-  
-  const emit = defineEmits(['toggleExpanded']);
-  
-  const contentBox = ref(null);
-  
-  function toggleExpanded() {
-    emit('toggleExpanded');
-  }
-  
-  </script>
-  
-  <style scoped>
-  h1 {
-    font-family: "Playfair Display";
-  }
-  </style>
-  
+    </div>
+  </Card>
+</template>
+
+<script setup>
+const props = defineProps({
+  testimonial: Object,
+});
+
+</script>
+
+<style scoped>
+h1 {
+  font-family: "Playfair Display";
+}
+</style>

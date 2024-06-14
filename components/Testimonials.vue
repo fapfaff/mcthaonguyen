@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row">
-    <div class="ps-4 pe-4 flex-grow">
+    <div class="lex-grow">
         <TestimonialCard
           :testimonial="testimonial"
           :isExpanded="isExpanded"
