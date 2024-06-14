@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-100 bg-ivory">
+    <div class="w-screen h-100 bg-creme-100">
         <Header>
 
         </Header>

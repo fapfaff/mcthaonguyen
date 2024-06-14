@@ -1,6 +1,6 @@
 <template>
-  <header class="fixed w-screen bg-ivory z-50">
-    <div class="w-full flex justify-between text-muted-gold">
+  <header class="fixed bg-creme-100 w-screen z-50">
+    <div class="w-full flex justify-between text-creme-700">
       <div class="ps-4 pe-4 pt-1 pb-1">
         <button @click="toggleNav()" class="font-semibold">
           {{ $t("header.menu") }}
@@ -11,17 +11,17 @@
       </div>
     </div>
     <div :class="expanded" class="collapsible-menu ps-2 pe-2">
-      <div class="border-muted-gold border-solid border-t border-b">
+      <div class="border-creme-700 border-solid border-t border-b">
           <nav v-if="isNavExpanded"
             class="flex flex-row justify-around"
           >
             <NuxtLink v-for="route in menuRoutes" :key="route.path" :to="localePath(route.path)" @click="handleRouting()">
-                <p class="text-black leading-3 p-1">{{ $t(`route.${route.name}`) }}</p>
+                <p class="text-apricot-950 leading-3 p-1">{{ $t(`route.${route.name}`) }}</p>
             </NuxtLink>
           </nav>
           <div v-if="isLangExpanded" class="flex flex-row justify-around">
             <NuxtLink v-for="locale in locales" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
-                <p class="text-black leading-3 p-1">{{ locale.name }}</p>
+                <p class="text-blue-950 leading-3 p-1">{{ locale.name }}</p>
             </NuxtLink>
           </div>
       </div>

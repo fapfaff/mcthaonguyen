@@ -11,8 +11,8 @@
     </div>  
   </div>
   <div class="flex flex-row justify-center items-center space-x-1 pt-2">
-        <button v-for="(_, i) in data" :key="i" class="rounded-full border-2 border-muted-gold"
-            :class="i == currentCardIndex ? 'bg-muted-gold h-5 w-5' : 'hover:h-5 hover:w-5 h-4 w-4'"
+        <button v-for="(_, i) in data" :key="i" class="rounded-full border-2 border-creme-700"
+            :class="i == currentCardIndex ? 'bg-creme-700 h-5 w-5' : 'hover:h-5 hover:w-5 h-4 w-4'"
             @click="switchToCard(i)"
             >
         </button>

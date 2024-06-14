@@ -1,6 +1,6 @@
 <template>
-    <div class="border-2 border-soft-peach p-1 h-full w-full">
-        <div class="bg-soft-peach w-full h-full p-2">
+    <div class="border-2 border-creme-500 p-1 h-full w-full">
+        <div class="bg-creme-200 text-blue-950 w-full h-full p-2">
             <slot />
         </div>
     </div>

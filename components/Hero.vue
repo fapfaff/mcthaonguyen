@@ -6,20 +6,20 @@
         class="flex flex-col landscape:flex-row justify-center items-center space-y-5 landscape:space-x-10"
       >
         <div>
-          <p class="landscape:hidden text-lg text-center text-muted-gold">
+          <p class="landscape:hidden text-lg text-center text-creme-700">
             {{ $t("hero.mc_service") }}
           </p>
           <h1
-            class="landscape:hidden text-4xl font-bold text-center tracking-widest"
+            class="landscape:hidden text-4xl font-bold text-center text-apricot-950 tracking-wider"
           >
             {{ $t("brand_name") }}
           </h1>
         </div>
         <!-- Circle -->
         <div
-          class="circle border-soft-peach border-2 flex items-center justify-center"
+          class="circle border-apricot-500 border-2 flex items-center justify-center"
         >
-          <div class="inner-circle bg-radial-soft-peach overflow-hidden">
+          <div class="inner-circle bg-radial-apricot overflow-hidden">
             <img
               src="@/assets/img/nguyen_ao_dai.webp"
               alt="Picture of Nguyen"
@@ -29,17 +29,17 @@
         <!-- Text -->
         <div class="flex flex-col justify-center space-y-2 landscape:space-y-6">
           <div class="hidden landscape:block mb-14">
-            <p class="text-4xl text-center text-muted-gold">
+            <p class="text-4xl text-center text-creme-700">
               {{ $t("hero.mc_service") }}
             </p>
             <h1
-            class="landscape:visible block text-3xl landscape:text-8xl font-bold underline text-center tracking-wider"
+            class="landscape:visible block text-3xl text-apricot-950 landscape:text-8xl font-bold underline text-center tracking-wider"
           >
             {{ $t("brand_name") }}
           </h1>
           </div>
           
-          <p class="text-center text-xl landscape:text-4xl">
+          <p class="text-center text-xl text-apricot-950 tracking-tighter landscape:text-4xl">
             {{ $t("brand_slogan") }}
           </p>
         </div>
