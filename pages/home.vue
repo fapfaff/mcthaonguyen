@@ -1,6 +1,6 @@
 <template>
   <Hero></Hero>
-  <div class="ms-2 me-2">
+  <div class="ms-4 me-4">
     <Heading
       id="services"
       :text="$t('route.services')"
