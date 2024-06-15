@@ -5,6 +5,7 @@
   :slides-per-view="1"
   :space-between="50"
   :pagination="{ clickable: true, el: '.swiper-pagination'}"
+  :autoplay="{ delay: 5000 }"
   :observer="true"
   :observeParents="true"
   :observeSlideChildren="true"
