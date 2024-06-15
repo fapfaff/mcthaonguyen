@@ -47,6 +47,9 @@ h1 {
 .swiper-container {
     overflow: visible;
 }
+.swiper-slide {
+    height: auto;
+}
 .swiper-pagination {
     position: relative;
     margin-top: 15px;
