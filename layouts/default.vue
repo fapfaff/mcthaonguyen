@@ -16,13 +16,15 @@ import { ModalsContainer } from 'vue-final-modal'
 function createStars(event: MouseEvent) {
     console.log("mouse move");
     const star = document.createElement('div');
+    star.textContent = '\u2605';
 
     star.classList.add('star');
 
     star.style.left = event.pageX + Math.round(Math.random() * 20) + 'px';
     star.style.top = event.pageY + Math.round(Math.random() * 20) + 'px';
-    star.style.height = Math.round(Math.random() * 5) + 'px';
-    star.style.width = Math.round(Math.random() * 5) + 'px';
+
+    star.style.fontSize = Math.round(Math.random() * 10) + 'px';
+    star.style.height = star.style.fontSize;
 
     document.body.append(star);
 
@@ -34,12 +36,18 @@ function createStars(event: MouseEvent) {
 <style>
 .star {
     position: absolute;
-    width: 3px;
-    height: 3px;
-    background: tan;
+    color: theme(colors.creme.600);
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
     z-index: 1000;
-    transform: rotate(35deg);
     animation: twinkle 1s infinite alternate;
+    transform: rotate(45deg);
+    line-height: 1;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    text-shadow: 0 0 4px theme(colors.creme.300);
 }
 
 
