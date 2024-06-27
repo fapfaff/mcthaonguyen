@@ -8,7 +8,7 @@
         />
       </div>
       <div class="flex-grow">
-        <p class="italic text-center text-xl">
+        <p class="italic text-center text-xl text-apricot-950">
           {{ '"' + testimonial.quote + '"' }}
         </p>
       </div>
