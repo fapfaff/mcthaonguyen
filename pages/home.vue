@@ -20,7 +20,13 @@
     ></Heading>
     <div class="h-52"></div>
     <Heading id="contact" :text="$t('route.contact')" class="anchor"></Heading>
-    <ContactCard></ContactCard>
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-screen-md flex flex-col gap-4">
+        <ContactCard class="w-full"></ContactCard>
+        <SocialsCard class="w-full"></SocialsCard>
+      </div>
+    </div>
+
     <div class="h-52"></div>
   </div>
 </template>

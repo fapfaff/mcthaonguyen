@@ -26,6 +26,7 @@
   "contact": {
     "email": "Email",
     "message": "Tin nhắn",
-    "send": "Gửi"
+    "send": "Gửi",
+    "orViaSocials": "Hoặc viết cho tôi ở đây!"
   }
 }

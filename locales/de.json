@@ -26,6 +26,7 @@
   "contact": {
     "email": "Email",
     "message": "Nachricht",
-    "send": "Senden"
+    "send": "Senden",
+    "orViaSocials": "Oder schreibt mir hier!"
   }
 }
