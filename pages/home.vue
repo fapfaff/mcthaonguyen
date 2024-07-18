@@ -13,7 +13,6 @@
       class="anchor"
     ></Heading>
     <Testimonials></Testimonials>
-    <div class="h-52"></div>
     <Heading
       id="aboutMe"
       :text="$t('route.about_me')"
