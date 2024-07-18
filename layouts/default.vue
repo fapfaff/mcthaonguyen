@@ -6,7 +6,7 @@
         <!-- Output the page content  -->
         <div>
             <slot />
-            <ModalsContainer />
+            <ModalsContainer /> 
         </div>
     </div>
 </template>
@@ -14,20 +14,28 @@
 import { ModalsContainer } from 'vue-final-modal'
 import { ref, onUnmounted } from 'vue';
 
+const ENABLE_SPARKLES = false;
+
 // Reference to store the last mouse position
 const lastMousePosition = ref({ x: 0, y: 0 });
 
 // Function to update the mouse position
 function updateMousePosition(event: MouseEvent) {
-    lastMousePosition.value.x = event.pageX;
-    lastMousePosition.value.y = event.pageY;
-    if (Math.random() > 0.5) {
-        createStar();
+    if (ENABLE_SPARKLES) {
+        lastMousePosition.value.x = event.pageX;
+        lastMousePosition.value.y = event.pageY;
+        if (Math.random() > 0.5) {
+            createStar();
+        }
     }
 }
 
 // Function to create stars
 function createStar() {
+    if (!ENABLE_SPARKLES) {
+        return;
+    }
+
     const star = document.createElement('div');
     star.textContent = '\u2605'; // Star character
     star.classList.add('star');
