@@ -1,14 +1,16 @@
 <template>
   <VueFinalModal
-    class="flex justify-center items-center"
-    content-class="absolute inset-0 max-w-xl"
+    content-class="absolute inset-0"
     overlay-transition="vfm-fade"
     content-transition="vfm-fade"
     :lockScroll="true"
   >
-    <div v-if="testimonial" class="absolute inset-0 h-full max-w-xl overflow-auto ">
-      <div class="bg-creme-200 rounded-lg flex flex-col max-w-xl my-12 mx-4 p-4">
-        <div class="flex flex-row justify-between pb-5">
+      <div
+        class="absolute inset-0 h-full overflow-auto"
+        @click.self="() => emit('close')"
+      >
+        <div class="flex flex-col max-w-xl my-12 mx-auto p-4 bg-creme-200 rounded-lg">
+          <div class="header flex flex-row justify-between pb-5">
           <p class="text-xl tracking-tight text-apricot-950">
             {{ testimonial.title }}
           </p>
@@ -38,7 +40,7 @@ import { VueFinalModal } from "vue-final-modal";
 import type { Testimonial } from "~/types/testimonial";
 
 defineProps<{
-  testimonial?: Testimonial;
+  testimonial: Testimonial;
 }>();
 
 const emit = defineEmits<{
