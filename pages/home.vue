@@ -6,8 +6,8 @@
       :text="$t('route.services')"
       class="anchor"
     ></Heading>
-      <Services></Services>
-      <Heading
+    <Services></Services>
+    <Heading
       id="testimonials"
       :text="$t('route.testimonials')"
       class="anchor"
@@ -20,9 +20,9 @@
     ></Heading>
     <div class="h-52"></div>
     <Heading id="contact" :text="$t('route.contact')" class="anchor"></Heading>
+    <ContactCard></ContactCard>
     <div class="h-52"></div>
   </div>
-
 </template>
 <style>
 body,
