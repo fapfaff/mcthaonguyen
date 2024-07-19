@@ -28,7 +28,7 @@
           />
         </div>
         <div class="text-apricot-950">
-          <ContentRendererMarkdown :value="testimonial" />
+          <ContentRendererMarkdown class="rendered" :value="testimonial" />
         </div>
       </div>
     </div>

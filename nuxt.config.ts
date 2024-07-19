@@ -35,5 +35,5 @@ export default defineNuxtConfig({
       scrollBehaviorType: "smooth",
     },
   },
-  css: ["vue-final-modal/style.css"],
+  css: ["vue-final-modal/style.css", "@/assets/css/markdown.css"],
 });

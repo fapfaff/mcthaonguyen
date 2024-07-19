@@ -15,13 +15,13 @@
           <nav v-if="isNavExpanded"
             class="flex flex-row justify-around"
           >
-            <NuxtLink v-for="route in menuRoutes" :key="route.path" :to="localePath(route.path)" @click="handleRouting()">
-                <p class="text-apricot-950 leading-3 p-1">{{ $t(`route.${route.name}`) }}</p>
+            <NuxtLink class="hover:text-creme-700" v-for="route in menuRoutes" :key="route.path" :to="localePath(route.path)" @click="handleRouting()">
+                {{ $t(`route.${route.name}`) }}
             </NuxtLink>
           </nav>
           <div v-if="isLangExpanded" class="flex flex-row justify-around">
-            <NuxtLink v-for="locale in locales" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
-                <p class="text-blue-950 leading-3 p-1">{{ locale.name }}</p>
+            <NuxtLink class="hover:text-creme-700" v-for="locale in locales" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
+                {{ locale.name }}
             </NuxtLink>
           </div>
       </div>

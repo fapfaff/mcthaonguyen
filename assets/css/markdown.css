@@ -1,0 +1,80 @@
+:root {
+    @apply text-apricot-950;
+    font-family: 'Playfair Display';
+}
+
+.rendered h1 {
+    @apply text-4xl mt-6 mb-4;
+}
+
+.rendered h2 {
+    @apply text-3xl mt-5 mb-3;
+}
+
+.rendered h3 {
+    @apply text-2xl mt-4 mb-2;
+}
+
+.rendered h4 {
+    @apply text-xl mt-3 mb-2;
+}
+
+.rendered h5 {
+    @apply text-lg mt-2 mb-1;
+}
+
+.rendered h6 {
+    @apply text-base mt-2 mb-1;
+}
+
+/* Styling for p elements */
+.rendered p {
+    @apply text-base leading-relaxed mb-4;
+}
+
+.rendered a {
+    @apply underline;
+}
+
+.rendered a:hover {
+    @apply text-creme-800;
+}
+
+
+/* Styling for code elements */
+.rendered code {
+    @apply bg-gray-100 px-1 py-0.5 rounded text-red-500;
+}
+
+/* Styling for pre elements */
+.rendered pre {
+    @apply bg-gray-100 p-4 rounded overflow-x-auto;
+}
+
+/* Styling for ul elements */
+.rendered ul {
+    @apply list-disc pl-5 mb-4;
+}
+
+/* Styling for ol elements */
+.rendered ol {
+    @apply list-decimal pl-5 mb-4;
+}
+
+/* Styling for table elements */
+.rendered table {
+    @apply w-full table-auto mb-4;
+}
+
+.rendered th {
+    @apply bg-gray-200 p-2 text-left;
+}
+
+.rendered td {
+    @apply border-t border-gray-200 p-2;
+}
+
+/* Styling for img elements */
+.rendered img {
+    @apply max-w-full h-auto;
+}

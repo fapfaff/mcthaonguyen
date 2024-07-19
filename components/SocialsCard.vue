@@ -2,9 +2,9 @@
   <div>
     <Card>
       <div class="flex flex-col content-center justify-center">
-        <h2 class="text-xl text-apricot-950 text-center mb-4">
+        <span class="text-xl text-apricot-950 text-center mb-4">
           {{ $t("contact.orViaSocials") }}
-        </h2>
+        </span>
         <div class="flex flex-row justify-center gap-14 mb-2">
           <a :href="config.socials.facebook" aria-label="Contact via Facebook">
             <img
