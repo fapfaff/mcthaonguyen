@@ -14,7 +14,9 @@
     "testimonials": "Nhận xét",
     "services": "Dịch vụ",
     "about_me": "Về tôi",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "legalDisclosure": "Thông tin pháp lý",
+    "privacyPolicy": "Chính sách bảo mật"
   },
   "hero": {
     "mc_service": "MC Service"

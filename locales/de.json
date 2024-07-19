@@ -14,7 +14,9 @@
     "testimonials": "Referenzen",
     "services": "Leistungen",
     "about_me": "Über mich",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "legalDisclosure": "Impressum",
+    "privacyPolicy": "Datenschutz"
   },
   "hero": {
     "mc_service": "MC Service"

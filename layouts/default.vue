@@ -1,13 +1,15 @@
 <template>
-    <div class="w-screen h-100 bg-creme-100" @mousemove="updateMousePosition">
+    <div class="flex flex-col w-screen min-h-screen h-full bg-creme-100" @mousemove="updateMousePosition">
         <Header>
 
         </Header>
         <!-- Output the page content  -->
-        <div>
+        <div class="flex-grow">
             <slot />
             <ModalsContainer /> 
         </div>
+        <Footer>
+        </Footer>
     </div>
 </template>
 <script setup lang="ts">
