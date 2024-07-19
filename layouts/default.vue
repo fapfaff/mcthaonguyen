@@ -66,6 +66,9 @@ onMounted(() => {
 </script>
 
 <style>
+:root {
+    @apply bg-creme-100;
+}
 .star {
     inset: unset;
     position: absolute;
