@@ -3,20 +3,25 @@
   <div
     class="flex flex-col flex-wrap justify-center items-stretch space-y-2 md:space-y-0 md:flex-row md:gap-x-5"
   >
-    <div class="service-wrapper">
+  <div class="service-wrapper" v-for="service in data.values()">
+      <ServiceCard
+        :service="service"
+      ></ServiceCard>
+    </div>
+    <!-- <div class="service-wrapper" >
       <ServiceCard
         src="/icons/wedding_ring.webp"
         :title="$t('services.marriages')"
-        :description="lorem"
+        description="Als Traurednerin mache ich eure freie Trauung unvergesslich und begleite euch den ganzen Abend mit moderierter Unterhaltung, Spielen und Programmpunkten – damit sich alle eure Gäste in die Feier eingebunden und wertgeschätzt fühlen."
       ></ServiceCard>
     </div>
     <div class="service-wrapper">
       <ServiceCard
         src="/icons/cake.webp"
         :title="$t('services.birthdays')"
-        :description="loremlorem"
+        description="Für deine Geburtstagsfeier sorge ich mit zweisprachiger Moderation dafür, dass alle Programmpunkte reibungslos ablaufen und jeder die Feier in vollen Zügen genießen kann."
       ></ServiceCard>
-    </div>
+    </div> -->
   </div>
 </template>
 <style scoped>
@@ -38,7 +43,8 @@
 
 </style>
 <script setup>
-const lorem =
-  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
-const loremlorem = lorem + lorem;
+const { locale } = useI18n();
+const { data } = await useAsyncData("services", () =>
+  queryContent(`${locale.value}/services`).find()
+);
 </script>

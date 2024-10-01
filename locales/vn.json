@@ -21,10 +21,6 @@
   "hero": {
     "mc_service": "MC Service"
   },
-  "services": {
-    "marriages": "Đám cưới",
-    "birthdays": "Sinh nhật"
-  },
   "contact": {
     "email": "Email",
     "message": "Tin nhắn",
