@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="flex justify-center w-full">
-        <button class="rounded-full bg-green-500 tect-blue-950 mt-4" @click="open">
+        <button class="rounded-full bg-green-500 tect-blue-950 mt-4 hover:bg-green-600" @click="open">
           <p class="p-1 ps-4 pe-4">Read more</p>
         </button>
       </div>
