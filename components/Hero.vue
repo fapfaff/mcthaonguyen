@@ -16,32 +16,28 @@
           </h1>
         </div>
         <!-- Circle -->
-        <div
-          class="circle border-apricot-500 border-2 flex items-center justify-center"
-        >
-          <div class="inner-circle bg-radial-apricot overflow-hidden">
-            <img
-              src="@/assets/img/nguyen_ao_dai.webp"
-              alt="Picture of Nguyen"
+        <img
+              src="@/assets/img/Hero.webp"
+              alt="Picture of Thảo Nguyên"
+              class="pl-8 pr-8"
             />
-          </div>
-        </div>
-        <!-- Text -->
-        <div class="flex flex-col justify-center space-y-2 landscape:space-y-6">
-          <div class="hidden landscape:block mb-14">
+
+        <div class="flex flex-col justify-center items-center space-y-2 landscape:space-y-6">
+          <div class="hidden landscape:block mb-2x`">
             <p class="text-4xl text-center text-creme-700">
               {{ $t("hero.mc_service") }}
             </p>
             <h1
-            class="landscape:visible block text-3xl text-apricot-950 landscape:text-8xl font-bold underline text-center tracking-wider"
-          >
-            {{ $t("brand_name") }}
-          </h1>
+              class="landscape:visible block text-3xl text-apricot-950 landscape:text-8xl font-bold text-center tracking-wider">
+              {{ $t("brand_name") }}
+            </h1>
           </div>
-          
           <p class="text-center text-xl text-apricot-950 tracking-tighter landscape:text-4xl">
             {{ $t("brand_slogan") }}
           </p>
+          <NuxtLink :to="localePath(contactRoute.path)" class="rounded-full border-creme-700 border-2 bg-creme-700 text-creme-50 font-semibold tracking-wider p-1 box-border w-fit px-12 py-1 hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900 focus:border-2">
+            {{ $t("contact_now") }}
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -92,6 +88,9 @@
 }
 </style>
 <script>
+import routes from '~/utils/routes';
+const contactRoute = routes.find(r => r.name === "contact");
+
 export default {
   setup() {
     const headerHeight = ref(0); // Stores the header's height
@@ -108,7 +107,9 @@ export default {
     });
 
     return {
+      contactRoute,
       headerHeight,
+      localePath: useLocalePath()
     };
   },
 };
