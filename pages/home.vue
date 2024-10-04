@@ -18,7 +18,7 @@
       :text="$t('route.about_me')"
       class="anchor"
     ></Heading>
-    <!-- <AboutMe></AboutMe> -->
+    <AboutMe></AboutMe>
     <div class="h-52"></div>
     <Heading id="contact" :text="$t('route.contact')" class="anchor"></Heading>
     <div class="w-full flex justify-center">
