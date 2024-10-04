@@ -26,6 +26,10 @@
     "email": "Email",
     "message": "Tin nhắn",
     "send": "Gửi",
-    "orViaSocials": "Hoặc viết cho tôi ở đây!"
+    "orViaSocials": "Hoặc viết cho tôi ở đây!",
+    "messageSentSuccess": "Tin nhắn của bạn đã được gửi!",
+    "messageSentError": "Xuất hiện lỗi khi gửi tin nhắn. Hãy thử lại sau nhé!",
+    "emailSubject": "Bạn có tin nhắn mới!",
+    "emailFromName": "MC Thao Nguyen"
   }
 }

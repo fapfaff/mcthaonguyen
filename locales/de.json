@@ -26,6 +26,10 @@
     "email": "Email",
     "message": "Nachricht",
     "send": "Senden",
-    "orViaSocials": "Oder schreibt mir hier!"
+    "orViaSocials": "Oder schreibt mir hier!",
+    "messageSentSuccess": "Die Nachricht wurde versandt!",
+    "messageSentError": "Fehler beim versenden der Nachricht. Probiere es später erneut!",
+    "emailSubject": "Du hast eine neue Nachricht",
+    "emailFromName": "MC Thao Nguyen"
   }
 }

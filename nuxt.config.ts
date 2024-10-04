@@ -36,4 +36,9 @@ export default defineNuxtConfig({
     },
   },
   css: ["vue-final-modal/style.css", "@/assets/css/markdown.css"],
+  runtimeConfig: {
+    public: {
+      web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
+    },
+  },
 });
