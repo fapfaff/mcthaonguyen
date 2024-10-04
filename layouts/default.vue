@@ -7,6 +7,7 @@
         <div class="flex-grow">
             <slot />
             <ModalsContainer /> 
+            <Toast/>
         </div>
         <Footer>
         </Footer>
