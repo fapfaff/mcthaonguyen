@@ -63,16 +63,16 @@ html {
 <script>
 export default {
   setup() {
-    const headerHeight = ref(0); // Stores the header's height
+    const headerHeight = ref(0);
 
     onMounted(() => {
-      const header = document.querySelector("header"); // Adjust this selector to target your header element
+      const header = document.querySelector("header");
       if (header) {
-        headerHeight.value = header.offsetHeight; // Get the actual height of the header
+        headerHeight.value = header.offsetHeight;
         document.documentElement.style.setProperty(
           "--header-height",
           `${headerHeight.value}px`
-        ); // Set the CSS variable on the root element
+        );
       }
     });
 
