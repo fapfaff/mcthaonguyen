@@ -3,7 +3,7 @@
   <div
     class="flex flex-col flex-wrap justify-center items-stretch gap-2 md:flex-row md:gap-5"
   >
-  <div class="service-wrapper" v-for="service in data.values()">
+  <div class="service-wrapper z-10" v-for="service in data.values()">
       <ServiceCard
         :service="service"
       ></ServiceCard>

@@ -46,10 +46,12 @@
       <img
         src="@/assets/img/flower_border_side.webp"
         alt="Floral border decoration"
+        class="z-0"
       />
       <img
         src="@/assets/img/flower_border_side.webp"
         alt="Floral border decoration"
+        class="z-0"
       />
     </div>
     <div class="h-100"></div>
