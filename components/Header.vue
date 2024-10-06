@@ -2,27 +2,34 @@
   <header class="fixed bg-creme-100 w-screen z-50">
     <div class="w-full flex justify-between text-creme-700">
       <div class="ps-4 pe-4 pt-1 pb-1">
-        <button @click="toggleNav()" class="font-semibold">
+        <button @click="toggleNav()" class="font-semibold" aria-controls="navMenu" :aria-expanded="isNavExpanded.toString()">
           {{ $t("header.menu") }}
         </button>
       </div>
       <div class="ps-4 pe-4 pt-1 pb-1">
-        <button @click="toggleLang()" class="font-semibold">{{ $t("header.language") }}</button>
+        <button @click="toggleLang()" class="font-semibold" aria-controls="langMenu" :aria-expanded="isLangExpanded.toString()">{{ $t("header.language") }}</button>
       </div>
     </div>
     <div :class="expanded" class="collapsible-menu ps-2 pe-2">
       <div class="border-creme-700 border-solid border-t border-b">
-          <nav v-if="isNavExpanded"
-            class="flex flex-row justify-around"
+          <nav id="navMenu" v-if="isNavExpanded"
           >
-            <NuxtLink class="hover:text-creme-700" v-for="route in menuRoutes" :key="route.path" :to="localePath(route.path)" @click="handleRouting()">
-                {{ $t(`route.${route.name}`) }}
-            </NuxtLink>
+            <ul class="flex flex-row justify-around">
+              <li v-for="route in menuRoutes" :key="route.path">
+                <NuxtLink class="hover:text-creme-700" :to="localePath(route.path)" @click="handleRouting()">
+                    {{ $t(`route.${route.name}`) }}
+                </NuxtLink>
+              </li>
+            </ul>
           </nav>
-          <div v-if="isLangExpanded" class="flex flex-row justify-around">
-            <NuxtLink class="hover:text-creme-700" v-for="locale in locales" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
-                {{ locale.name }}
-            </NuxtLink>
+          <div id="langMenu" v-if="isLangExpanded" class="flex flex-row justify-around">
+            <ul class="flex flex-row justify-around">
+              <li v-for="locale in locales">
+                <NuxtLink class="hover:text-creme-700" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
+                    {{ locale.name }}
+                </NuxtLink>
+              </li>
+            </ul>
           </div>
       </div>
     </div>

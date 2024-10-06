@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isVisible" :class="toastClass">
+  <div role="alert" v-if="isVisible" :class="toastClass" aria-atomic="true">
     {{ message }} 
   </div>
 </template>

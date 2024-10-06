@@ -31,5 +31,13 @@
     "messageSentError": "Xuất hiện lỗi khi gửi tin nhắn. Hãy thử lại sau nhé!",
     "emailSubject": "Bạn có tin nhắn mới!",
     "emailFromName": "MC Thao Nguyen"
+  },
+  "aria": {
+    "photoOf": "Ảnh trong",
+    "readFullTestimonial": "Đọc toàn bộ đánh giá từ",
+    "closeTestimonial": "Đóng đánh giá",
+    "contactViaInstagram": "Liên hệ với tôi qua Instagram",
+    "contactViaTiktok": "Liên hệ với tôi qua Tiktok",
+    "contactViaFacebook": "Liên hệ với tôi qua Facebook"
   }
 }

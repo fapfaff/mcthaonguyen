@@ -2,22 +2,22 @@
         <Card>
             <form @submit.prevent="submitForm">
                 <div class="w-100 mb-2">
-                    <label class="block text-sm mb-1 tracking-widest " for="email">{{ $t('contact.email').toUpperCase() }}</label>
-                    <input v-model="formData.email" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800" id="email" type="email" required>
+                    <label id="emailLabel" class="block text-sm mb-1 tracking-widest " for="email">{{ $t('contact.email').toUpperCase() }}</label>
+                    <input v-model="formData.email" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800" id="email" type="email" aria-labelledby="emailLabel" required>
                 </div>
     
                <div class="w-100 mb-2">
-                    <label class="block text-sm mb-1 tracking-widest" for="message">{{ $t('contact.message').toUpperCase() }}</label>
-                    <textarea v-model="formData.message" class="rounded border-2 border-creme-400   bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800 h-40" id="message" name="message" rows="10" required></textarea>          
+                    <label id="messageLabel" class="block text-sm mb-1 tracking-widest" for="message">{{ $t('contact.message').toUpperCase() }}</label>
+                    <textarea v-model="formData.message" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800 h-40" id="message" name="message" rows="10" aria-labelledby="messageLabel" required></textarea>          
                 </div>
 
-                <input v-model="formData.botcheck" type="checkbox" name="botcheck" id="" style="display: none;" />
+                <input v-model="formData.botcheck" type="checkbox" name="botcheck" id="" style="display: none;" aria-hidden="true" />
 
                 <div class="mt-1">
                     <button type="submit" class="rounded border-creme-700 border-2 bg-creme-700 text-creme-50 font-semibold tracking-wider p-1 box-border w-full hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900 focus:border-2">
                         <span v-if="!loading">{{ $t('contact.send') }}</span>
-                        <span v-else>
-                            <svg role="progressbar" alt="loading" class="inline w-4 h-4 ml-2 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <span v-else role="progressbar" aria-label="Loading... the form is being submitted.">
+                            <svg aria-hidden="true" alt="loading" class="inline w-4 h-4 ml-2 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
                             </svg>

@@ -31,5 +31,13 @@
     "messageSentError": "Fehler beim versenden der Nachricht. Probiere es später erneut!",
     "emailSubject": "Du hast eine neue Nachricht",
     "emailFromName": "MC Thao Nguyen"
+  },
+  "aria": {
+    "photoOf": "Foto von",
+    "readFullTestimonial": "Lese die volle Rezension von",
+    "closeTestimonial": "Schließe die Rezension",
+    "contactViaInstagram": "Kontaktiere mich über Instagram",
+    "contactViaTiktok": "Kontaktiere mich über Tiktok",
+    "contactViaFacebook": "Kontaktiere mich über Facebook"
   }
 }

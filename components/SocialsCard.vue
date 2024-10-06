@@ -6,20 +6,25 @@
           {{ $t("contact.orViaSocials") }}
         </span>
         <div class="flex flex-row justify-center gap-14 mb-2">
-          <a :href="config.socials.facebook" aria-label="Contact via Facebook">
+          <a :href="config.socials.facebook" :aria-label="$t('aria.contactViaFacebook')">
             <img
+              aria-hidden="true"
               class="w-12 h-12"
               src="@/assets/img/socials/Facebook_Logo.webp"
             />
           </a>
-          <a :href="config.socials.tiktok" aria-label="Contact via Tiktok">
+          <a :href="config.socials.tiktok" :aria-label="$t('aria.contactViaTiktok')">
             <img
+              aria-hidden="true"
               class="w-12 h-12"
               src="@/assets/img/socials/TikTok_Logo.webp"
             />
           </a>
-          <a :href="config.socials.instagram" aria-label="Contact via Instagram">
+          <a
+            :href="config.socials.instagram"
+            :aria-label="$t('aria.contactViaInstagram')">          >
             <img
+              aria-hidden="true"
               class="w-12 h-12"
               src="@/assets/img/socials/Instagram_Logo.webp"
             />
@@ -30,5 +35,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-import config from '~/config';
+import config from "~/config";
+import ContactCard from "./ContactCard.vue";
 </script>
