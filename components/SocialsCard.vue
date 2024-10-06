@@ -22,7 +22,7 @@
           </a>
           <a
             :href="config.socials.instagram"
-            :aria-label="$t('aria.contactViaInstagram')">          >
+            :aria-label="$t('aria.contactViaInstagram')">
             <img
               aria-hidden="true"
               class="w-12 h-12"
