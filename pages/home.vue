@@ -18,8 +18,11 @@
       :text="$t('route.about_me')"
       class="anchor"
     ></Heading>
-    <AboutMe></AboutMe>
-    <div class="h-52"></div>
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-screen-md flex flex-col gap-4">
+        <AboutMe></AboutMe>
+        </div>
+    </div>
     <Heading id="contact" :text="$t('route.contact')" class="anchor"></Heading>
     <div class="w-full flex justify-center">
       <div class="w-full max-w-screen-md flex flex-col gap-4">
@@ -27,8 +30,7 @@
         <SocialsCard class="w-full"></SocialsCard>
       </div>
     </div>
-
-    <div class="h-52"></div>
+    <div class="h-16"></div>
   </div>
 </template>
 <style>
