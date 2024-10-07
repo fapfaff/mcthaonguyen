@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "nuxt-swiper",
     "@nuxt/image",
+    "@nuxthq/studio",
   ],
 
   i18n: {
