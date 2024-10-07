@@ -22,6 +22,9 @@
   "hero": {
     "mc_service": "MC Service"
   },
+  "testimonials": {
+    "readMore": "Mehr erfahren"
+  },
   "contact": {
     "email": "Email",
     "message": "Nachricht",

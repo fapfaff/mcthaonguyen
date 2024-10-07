@@ -19,7 +19,7 @@
           @click="open"
           :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
         >
-          <span class="p-1 ps-4 pe-4">Read more</span>
+          <span class="p-1 ps-4 pe-4">{{ $t('testimonials.readMore') }}</span>
         </button>
       </div>
     </div>

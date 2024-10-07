@@ -22,6 +22,9 @@
   "hero": {
     "mc_service": "MC Service"
   },
+  "testimonials": {
+    "readMore": "Xem thêm"
+  },
   "contact": {
     "email": "Email",
     "message": "Tin nhắn",
