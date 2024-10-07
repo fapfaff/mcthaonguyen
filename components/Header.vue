@@ -14,7 +14,7 @@
       <div class="border-creme-700 border-solid border-t border-b">
           <nav id="navMenu" v-if="isNavExpanded"
           >
-            <ul class="flex flex-row justify-around">
+            <ul class="flex flex-row justify-evenly">
               <li v-for="route in menuRoutes" :key="route.path">
                 <NuxtLink class="hover:text-creme-700" :to="localePath(route.path)" @click="handleRouting()">
                     {{ $t(`route.${route.name}`) }}
@@ -22,8 +22,8 @@
               </li>
             </ul>
           </nav>
-          <div id="langMenu" v-if="isLangExpanded" class="flex flex-row justify-around">
-            <ul class="flex flex-row justify-around">
+          <div id="langMenu" v-if="isLangExpanded">
+            <ul class="flex flex-row justify-evenly">
               <li v-for="locale in locales">
                 <NuxtLink class="hover:text-creme-700" :key="locale.code" :to="switchLocalePath(locale.code)" @click="toggleLang()">
                     {{ locale.name }}
