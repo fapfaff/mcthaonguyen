@@ -49,7 +49,7 @@ export const useSeo = (metaKey: string = "default") => {
       },
       {
         name: "twitter:title",
-        content: t(`.meta.${metaKey}.twitterTitle`),
+        content: t(`meta.${metaKey}.twitterTitle`),
       },
       {
         name: "twitter:description",
