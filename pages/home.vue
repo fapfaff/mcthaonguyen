@@ -61,8 +61,12 @@ html {
 }
 </style>
 <script>
+import { useSeo } from '~/composables/useSeo';
+
 export default {
   setup() {
+    useSeo('default');
+
     const headerHeight = ref(0);
 
     onMounted(() => {

@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "nuxt-swiper",
   ],
+
   i18n: {
     strategy: "prefix",
     locales: [
@@ -23,6 +25,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "de",
   },
+
   googleFonts: {
     families: {
       Roboto: true,
@@ -30,15 +33,21 @@ export default defineNuxtConfig({
     },
     download: true,
   },
+
   router: {
     options: {
       scrollBehaviorType: "smooth",
     },
   },
+
   css: ["vue-final-modal/style.css", "@/assets/css/markdown.css"],
+
   runtimeConfig: {
     public: {
+      baseUrl: process.env.BASE_URL,
       web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
     },
   },
+
+  compatibilityDate: "2024-10-06",
 });
