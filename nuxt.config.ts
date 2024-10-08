@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: "de",
+    detectBrowserLanguage: false,
   },
 
   googleFonts: {
