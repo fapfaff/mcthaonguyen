@@ -35,6 +35,5 @@
   </div>
 </template>
 <script lang="ts" setup>
-import config from "~/config";
-import ContactCard from "./ContactCard.vue";
+const config = useAppConfig();
 </script>

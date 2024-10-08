@@ -45,12 +45,15 @@ export default defineNuxtConfig({
 
   css: ["vue-final-modal/style.css", "@/assets/css/markdown.css"],
 
-  runtimeConfig: {
-    public: {
-      baseUrl: process.env.BASE_URL,
-      web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
+  compatibilityDate: "2024-10-06",
+
+  appConfig: {
+    baseUrl: process.env.BASE_URL,
+    web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
+    socials: {
+      tiktok: "https://www.tiktok.com/@deutschmitbiziibee",
+      instagram: "https://www.instagram.com/biziibee/",
+      facebook: "https://www.facebook.com/thaonguyen.hoang.7509",
     },
   },
-
-  compatibilityDate: "2024-10-06",
 });
