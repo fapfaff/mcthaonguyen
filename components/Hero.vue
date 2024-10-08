@@ -3,7 +3,7 @@
     <!-- Actual hero content -->
     <div class="flex-grow flex items-center justify-center">
       <div
-        class="flex flex-col landscape:flex-row justify-center items-center space-y-5 landscape:space-x-10"
+        class="flex flex-col landscape:flex-row justify-center items-center space-y-5 landscape:space-x-10 landscape:mr-10"
       >
         <!-- Portrait only  -->
         <div>
