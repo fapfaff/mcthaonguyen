@@ -4,7 +4,7 @@
       <div v-if="testimonial.img" class="pb-5 flex justify-center w-full">
         <img
           :alt="`${$t('aria.photoOf')} '${testimonial.title}'`"
-          :src="`/testimonials/${testimonial.img}`"
+          :src="testimonial.img"
           class="w-4/5 object-cover aspect-auto rounded-lg"
         />
       </div>

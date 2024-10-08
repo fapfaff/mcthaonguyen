@@ -18,7 +18,7 @@
         </div>
         <!-- Image -->
         <img
-          src="@/assets/img/Hero.webp"
+          src="@/assets/images/Hero.webp"
           :alt="$t('aria.heroPhoto')"
           class="w-full landscape:max-w-[45vw] h-auto landscape:flex-1 portrait:px-8"
         />
@@ -56,11 +56,11 @@
       aria-hidden="true"
     >
       <img
-        src="@/assets/img/flower_border_side.webp"
+        src="@/assets/images/flower_border_side.webp"
         class="z-0 h-[25vh] w-auto max-w-1/2"
       />
       <img
-        src="@/assets/img/flower_border_side.webp"
+        src="@/assets/images/flower_border_side.webp"
         class="z-0 h-[25vh] w-auto max-w-1/2 transform scale-x-[-1]"
       />
     </div>

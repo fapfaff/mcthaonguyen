@@ -25,7 +25,7 @@
         <div v-if="testimonial.img" class="pb-3 flex justify-center">
           <img
             :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
-            :src="`/testimonials/${testimonial.img}`"
+            :src="testimonial.img"
             class="w-100 object-cover aspect-3/2 rounded-lg"
           />
         </div>

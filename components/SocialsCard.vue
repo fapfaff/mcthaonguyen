@@ -10,14 +10,14 @@
             <img
               aria-hidden="true"
               class="w-12 h-12"
-              src="@/assets/img/socials/Facebook_Logo.webp"
+              src="@/assets/images/socials/Facebook_Logo.webp"
             />
           </a>
           <a :href="config.socials.tiktok" :aria-label="$t('aria.contactViaTiktok')">
             <img
               aria-hidden="true"
               class="w-12 h-12"
-              src="@/assets/img/socials/TikTok_Logo.webp"
+              src="@/assets/images/socials/TikTok_Logo.webp"
             />
           </a>
           <a
@@ -26,7 +26,7 @@
             <img
               aria-hidden="true"
               class="w-12 h-12"
-              src="@/assets/img/socials/Instagram_Logo.webp"
+              src="@/assets/images/socials/Instagram_Logo.webp"
             />
           </a>
         </div>
