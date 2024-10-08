@@ -29,7 +29,8 @@
 </template>
 <script setup lang="ts">
 const { toast } = useToast();
-const config = useAppConfig();
+const config = useRuntimeConfig();
+
 const { t } = useI18n()
 
 const loading = ref(false);
@@ -45,7 +46,7 @@ async function submitForm(event: any) {
     loading.value = true;
 
     const body = {
-        "access_key": config.web3FormsAccessKey,
+        "access_key": config.public.web3FormsAccessKey,
         "subject": t('contact.emailSubject'),
         "from_name": t('contact.emailFromName'),
         "replyto": formData.email,

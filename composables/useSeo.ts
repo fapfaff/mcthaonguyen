@@ -1,9 +1,9 @@
 export const useSeo = (metaKey: string = "default") => {
   const { t } = useI18n();
 
-  const config = useRuntimeConfig();
+  const config = useAppConfig();
 
-  const image = `${config.public.baseUrl}/images/thao_nguyen.webp`;
+  const image = `${config.baseUrl}/images/thao_nguyen.webp`;
 
   useHead({
     title: t(`meta.${metaKey}.title`),

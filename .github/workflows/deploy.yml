@@ -16,7 +16,10 @@ jobs:
         with:
           node-version: "20"
       - run: pnpm install
+      - run: echo "${{ vars.WEB3FORMS_ACCESS_KEY }}"
       - run: pnpx nuxt build --preset github_pages
+        env:
+          WEB3FORMS_ACCESS_KEY: ${{ vars.WEB3FORMS_ACCESS_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

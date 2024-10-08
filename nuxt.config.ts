@@ -47,13 +47,9 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2024-10-06",
 
-  appConfig: {
-    baseUrl: process.env.BASE_URL,
-    web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
-    socials: {
-      tiktok: "https://www.tiktok.com/@deutschmitbiziibee",
-      instagram: "https://www.instagram.com/biziibee/",
-      facebook: "https://www.facebook.com/thaonguyen.hoang.7509",
+  runtimeConfig: {
+    public: {
+      web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
     },
   },
 });
