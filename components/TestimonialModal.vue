@@ -22,12 +22,17 @@
             ✕
           </button>
         </div>
-        <div v-if="testimonial.img" class="pb-3 flex justify-center">
-          <img
-            :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
-            :src="testimonial.img"
-            class="w-100 object-cover aspect-3/2 rounded-lg"
-          />
+        <div class="mb-3 flex justify-center rounded-lg overflow-hidden">
+            <iframe
+              v-if="testimonial.video" 
+              class="w-full h-auto aspect-video" :src="testimonial.video" 
+              frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img
+              v-if="!testimonial.video && testimonial.img"
+              :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
+              :src="testimonial.img"
+              class="w-100 object-cover aspect-3/2"
+            />
         </div>
         <div class="text-apricot-950">
           <ContentRendererMarkdown class="rendered" :value="testimonial" />
