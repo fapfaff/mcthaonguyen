@@ -30,7 +30,6 @@
         <SocialsCard class="w-full"></SocialsCard>
       </div>
     </div>
-    <div class="h-16"></div>
   </div>
 </template>
 <style>
