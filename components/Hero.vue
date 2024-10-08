@@ -24,9 +24,9 @@
         />
         <!-- Landscape and partially Portrait-->
         <div
-          class="flex-1 flex flex-col justify-center items-center space-y-2 landscape:space-y-6"
+          class="flex-1 flex flex-col justify-center items-center space-y-2 landscape:space-y-8"
         >
-          <div class="hidden landscape:block mb-4">
+          <div class="hidden landscape:block">
             <h2 class="text-4xl text-center text-creme-700">
               {{ $t("hero.mc_service") }}
             </h2>
