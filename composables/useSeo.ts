@@ -3,7 +3,7 @@ export const useSeo = (metaKey: string = "default") => {
 
   const config = useRuntimeConfig();
 
-  const image = `${config.public.baseUrl}/thao_nguyen.webp`;
+  const image = `${config.public.baseUrl}/images/thao_nguyen.webp`;
 
   useHead({
     title: t(`meta.${metaKey}.title`),
