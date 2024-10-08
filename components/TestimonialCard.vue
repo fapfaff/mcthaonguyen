@@ -15,11 +15,11 @@
       </div>
       <div class="flex justify-center w-full">
         <button
-          class="rounded-full bg-green-500 text-blue-950 mt-4 hover:bg-green-600"
+          class="rounded-full border-2 bg-creme-300 border-creme-700 text-blue-950 mt-4 hover:bg-creme-400 px-6 py-1"
           @click="open"
           :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
         >
-          <span class="p-1 ps-4 pe-4">{{ $t('testimonials.readMore') }}</span>
+          {{ $t('testimonials.readMore') }}
         </button>
       </div>
     </div>
