@@ -1,7 +1,7 @@
 <template>
 
   <div
-    class="flex flex-col flex-wrap justify-center items-stretch gap-2 md:flex-row md:gap-5"
+    class="flex flex-col flex-wrap justify-center items-stretch gap-4 md:flex-row"
   >
   <div class="service-wrapper z-10" v-for="service in data.values()">
       <ServiceCard
