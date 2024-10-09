@@ -23,9 +23,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Article } from "~/types/article";
-
-const { locale } = useI18n();
+const { t, locale } = useI18n();
 const route = useRoute();
 
 const { data } = await useAsyncData("article", async () => {
@@ -39,7 +37,7 @@ const { data } = await useAsyncData("article", async () => {
 if (!data.value || !data.value.slug || !data.value.headline || !data.value.description || !data.value.date) {
   throw createError({
     statusCode: 404,
-    message: "Could not find the article",
+    message: t("error.articleNotFound"),
     fatal: true
   });
 } else {

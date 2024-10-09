@@ -1,18 +1,26 @@
 <template>
   <NuxtLayout>
-    <div class="flex-row content-center justify-center h-screen ml-5 mr-5">
-      <div class="border-muted-gold border-2 border-solid mb-5 ">
-        <h1 class="text-5xl text-center p-2">Error {{ error.statusCode }}</h1>
-        <h1 v-if="error.statusCode === 404" class="text-xl text-center p-2">{{ $t("error.not_found") }}</h1>
-        <h1 v-else class="text-xl p-2">{{ $t("error.generic_error") }}</h1>
-        <div class="p-2">
-            <NuxtLink :to="localePath('/')" class="flex align-center bg-deep-green rounded-md p-2"><p class="text-center text-white w-full">Home</p></NuxtLink>
+    <div class="flex justify-center mt-20 mx-10">
+      <Card class="max-w-6xl">
+        <div class="flex flex-col justify-center items-center gap-2 p-2">
+          <h2 class="text-2xl text-center">{{ $t("error.header") }}</h2>
+          <h1 class="text-4xl text-center">
+            {{ ` ${error.message} (${error.statusCode})` }}
+          </h1>
+          <NuxtLink
+            :to="localePath('/')"
+            class="btn-primary">{{ $t("error.backToHome") }}</NuxtLink
+          >
         </div>
-      </div>
-
+      </Card>
     </div>
   </NuxtLayout>
 </template>
 <script setup>
 const error = useError();
 </script>
+<style>
+.btn-primary {
+  @apply rounded border-creme-700 border-2 bg-creme-700 text-creme-50 font-semibold tracking-wider box-border hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900 focus:border-2 px-10 py-1 mt-4;
+}
+</style>

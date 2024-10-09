@@ -4,8 +4,9 @@
   "brand_slogan": "Zwei Sprachen - eine unvergessliche Feier",
   "contact_now": "Jetzt kontaktieren!",
   "error": {
-    "not_found": "Die Seite konnte nicht gefunden werden",
-    "generic_error": "Ein Fehler ist aufgetreten"
+    "header": "Ups! Ein Fehler ist aufgetreten",
+    "backToHome": "Zurück zum Start",
+    "articleNotFound": "Dieser Artikel existiert nicht"
   },
   "header": {
     "menu": "Menü",

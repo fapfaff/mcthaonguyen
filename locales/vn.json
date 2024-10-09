@@ -3,8 +3,9 @@
   "brand_slogan": "Hai ngôn ngữ - một buổi tiệc đáng nhớ",
   "contact_now": "Liên hệ ngay",
   "error": {
-    "not_found": "Không tìm thấy trang",
-    "generic_error": "Lỗi máy chủ"
+    "errorHeader": "Oops! Đã xảy ra lỗi.",
+    "backToHome": "Quay lại trang chủ",
+    "articleNotFound": "Bài viết không tồn tại"
   },
   "header": {
     "menu": "Menu",
