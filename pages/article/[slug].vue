@@ -1,6 +1,7 @@
 <template>
-  <div class="flex gap-8 mx-4 justify-center">
-    <div class="grow max-w-4xl flex flex-row items-start gap-8">
+  <div class="flex flex-col lg:flex-row gap-4 mx-4 justify-center">
+    <!-- Main Content Card -->
+    <div class="order-1 grow max-w-4xl">
       <Card class="justify-self-center">
         <img :src="data?.img" :alt="data?.imgAlt" />
         <div class="mt-8 mb-4">
@@ -9,14 +10,19 @@
         <ContentRendererMarkdown v-if="data" class="rendered" :value="data" />
       </Card>
     </div>
-    <div class="justify-self-end max-w-md flex flex-col gap-4">
-      <div class="h-fit">
-        <AboutAuthor></AboutAuthor>
-      </div>
-      <div class="h-fit">
-        <Card v-if="data?.date" class="h-fit"
-          >{{ `${$t("articles.publishedAt")} ${formatDate(data?.date)}` }}
+
+    <!-- Sidebar -->
+    <div class="flex flex-col order-2 max-w-md gap-4">
+      <!-- Published at Card -->
+      <div class="order-1 lg:order-2 h-fit">
+        <Card v-if="data?.date" class="h-fit">
+          {{ `${$t("articles.publishedAt")} ${formatDate(data?.date)}` }}
         </Card>
+      </div>
+
+      <!-- About the Author Card -->
+      <div class="order-2 lg:order-1 h-fit">
+        <AboutAuthor></AboutAuthor>
       </div>
     </div>
   </div>
