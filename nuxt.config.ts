@@ -1,3 +1,7 @@
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -52,4 +56,39 @@ export default defineNuxtConfig({
       web3FormsAccessKey: process.env.WEB3FORMS_ACCESS_KEY,
     },
   },
+
+  nitro: {
+    prerender: {
+      routes: getArticleRoutes(),
+    },
+  },
 });
+
+function getArticleRoutes() {
+  const locales = ["de", "vn"];
+  const routes: string[] = [];
+
+  locales.forEach((locale) => {
+    const articlesDir = path.resolve(__dirname, "content", locale, "articles");
+
+    if (fs.existsSync(articlesDir)) {
+      const files = fs.readdirSync(articlesDir);
+      files
+        .filter((file) => path.extname(file) === ".md")
+        .forEach((file) => {
+          const filePath = path.join(articlesDir, file);
+          const fileContent = fs.readFileSync(filePath, "utf8");
+          const { data } = matter(fileContent);
+          const slug = data.slug;
+
+          if (slug) {
+            routes.push(`/${locale}/article/${slug}`);
+          } else {
+            console.warn(`No slug found in frontmatter of ${filePath}`);
+          }
+        });
+    }
+  });
+
+  return routes;
+}

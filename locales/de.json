@@ -1,4 +1,5 @@
 {
+  "fullName": "Thảo Nguyên Hoàng",
   "brand_name": "Thảo Nguyên",
   "brand_slogan": "Zwei Sprachen - eine unvergessliche Feier",
   "contact_now": "Jetzt kontaktieren!",
@@ -34,6 +35,12 @@
     "messageSentError": "Fehler beim versenden der Nachricht. Probiere es später erneut!",
     "emailSubject": "Du hast eine neue Nachricht",
     "emailFromName": "MC Thao Nguyen"
+  },
+  "articles": {
+    "portraitThaoNguyen": "Portrait von Thảo Nguyên",
+    "aboutAuthor": "Über die Autorin",
+    "authorDescription": "Thảo Nguyên, geboren in Hanoi, Vietnam, zog nach Deutschland, wo sie heute als zweisprachige Moderatorin (MC) und freie Traurednerin für vietnamesische Paare tätig ist. Mit ihrer tiefen Verbindung zu beiden Kulturen unterstützt sie Paare dabei, ihre Hochzeitszeremonien zu einem einzigartigen Erlebnis zu machen, indem sie vietnamesische Traditionen mit deutschen Bräuchen verbindet.",
+    "publishedAt": "Veröffentlicht am"
   },
   "aria": {
     "photoOf": "Foto von",

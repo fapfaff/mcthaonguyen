@@ -35,6 +35,12 @@
     "emailSubject": "Bạn có tin nhắn mới!",
     "emailFromName": "MC Thao Nguyen"
   },
+  "articles": {
+    "portraitThaoNguyen": "Chân dung của Thảo Nguyên",
+    "aboutAuthor": "Về tác giả",
+    "authorDescription": "Thảo Nguyên, sinh ra tại Hà Nội, Việt Nam, đã chuyển đến Đức, nơi cô hiện đang làm người dẫn chương trình song ngữ (MC) và người dẫn lễ cưới tự do cho các cặp đôi người Việt tại Đức. Với sự kết nối sâu sắc giữa hai nền văn hóa, cô giúp các cặp đôi biến lễ cưới của họ thành một trải nghiệm độc đáo bằng cách kết hợp các truyền thống Việt Nam với phong tục của Đức.",
+    "publishedAt": "Xuất bản vào"
+  },
   "aria": {
     "photoOf": "Ảnh trong",
     "readFullTestimonial": "Đọc toàn bộ đánh giá từ",
