@@ -40,15 +40,16 @@ if (!data.value || !data.value.slug || !data.value.headline || !data.value.descr
   throw createError({
     statusCode: 404,
     message: "Could not find the article",
+    fatal: true
   });
 } else {
   useArticleSeo({
     slug: data.value.slug!,
     headline: data.value.headline!,
     description: data.value.description,
-    img: data.value.img || "", // Optional
-    imgAlt: data.value.imgAlt || "", // Optional
     date: data.value.date,
+    img: data.value.img,
+    imgAlt: data.value.imgAlt,
     tags: data.value.tags,
   });
 }
