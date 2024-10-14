@@ -8,12 +8,12 @@
         <!-- Portrait only  -->
         <div>
           <h2 class="landscape:hidden text-lg text-center text-creme-700">
-            {{ $t("hero.mc_service") }}
+            {{ $t("hero.mc") }}
           </h2>
           <h1
             class="landscape:hidden text-4xl font-bold text-center text-apricot-950 tracking-wider"
           >
-            {{ $t("brand_name") }}
+            {{ $t("hero.brand_name") }}
           </h1>
         </div>
         <!-- Image -->
@@ -28,24 +28,24 @@
         >
           <div class="hidden landscape:block">
             <h2 class="text-4xl text-center text-creme-700">
-              {{ $t("hero.mc_service") }}
+              {{ $t("hero.mc") }}
             </h2>
             <h1
               class="text-3xl text-apricot-950 landscape:text-8xl font-bold text-center tracking-wider"
             >
-              {{ $t("brand_name") }}
+              {{ $t("hero.brand_name") }}
             </h1>
           </div>
           <h3
             class="text-center text-xl text-apricot-950 tracking-tighter landscape:text-4xl"
           >
-            {{ $t("brand_slogan") }}
+            {{ $t("hero.brand_slogan") }}
           </h3>
           <NuxtLink
             :to="localePath(contactRoute.path)"
             class="btn-primary"
           >
-            {{ $t("contact_now") }}
+            {{ $t("hero.contact_now") }}
           </NuxtLink>
         </div>
       </div>

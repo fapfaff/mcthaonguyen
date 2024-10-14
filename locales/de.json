@@ -1,8 +1,5 @@
 {
   "fullName": "Thảo Nguyên",
-  "brand_name": "Thảo Nguyên",
-  "brand_slogan": "Zwei Sprachen - eine unvergessliche Feier",
-  "contact_now": "Jetzt kontaktieren!",
   "error": {
     "header": "Ups! Ein Fehler ist aufgetreten",
     "backToHome": "Zurück zum Start",
@@ -22,7 +19,10 @@
     "privacyPolicy": "Datenschutz"
   },
   "hero": {
-    "mc_service": "MC Service"
+    "brand_name": "Thảo Nguyên",
+    "brand_slogan": "Zwei Sprachen - eine unvergessliche Feier",
+    "contact_now": "Jetzt kontaktieren!",
+    "mc": "Moderatorin"
   },
   "testimonials": {
     "readMore": "Mehr erfahren"

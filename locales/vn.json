@@ -1,8 +1,5 @@
 {
   "fullName": "Thảo Nguyên",
-  "brand_name": "Thảo Nguyên",
-  "brand_slogan": "Hai ngôn ngữ-Một hành trình cảm xúc",
-  "contact_now": "Liên hệ ngay",
   "error": {
     "errorHeader": "Oops! Đã xảy ra lỗi.",
     "backToHome": "Quay lại trang chủ",
@@ -22,7 +19,10 @@
     "privacyPolicy": "Chính sách bảo mật"
   },
   "hero": {
-    "mc_service": "MC Service"
+    "brand_name": "Thảo Nguyên",
+    "brand_slogan": "Hai ngôn ngữ-Một hành trình cảm xúc",
+    "contact_now": "Liên hệ ngay",
+    "mc": "MC"
   },
   "testimonials": {
     "readMore": "Xem thêm"
