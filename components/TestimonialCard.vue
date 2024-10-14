@@ -1,11 +1,11 @@
 <template>
   <Card>
-    <div class="pt-2 pb-2 h-full flex flex-col">
+    <div class="h-full flex flex-col">
       <div v-if="testimonial.img" class="pb-5 flex justify-center w-full">
         <img
           :alt="`${$t('aria.photoOf')} '${testimonial.title}'`"
           :src="testimonial.img"
-          class="w-4/5 object-cover aspect-auto rounded-lg"
+          class="object-cover aspect-auto rounded-sm"
         />
       </div>
       <div class="flex-grow">
