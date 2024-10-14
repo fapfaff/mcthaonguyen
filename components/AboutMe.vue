@@ -1,5 +1,6 @@
 <template>
     <Card v-if="data">
+      <img v-if="data[0].img" :src="data[0].img" :alt="data[0].imgAlt" class="rounded-sm"/>
       <ContentRendererMarkdown :value="data[0]" class="rendered"/>
     </Card>
 </template>
