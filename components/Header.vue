@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed bg-creme-100 w-screen z-50">
+  <header class="lg:hidden fixed bg-creme-100 w-screen z-50">
     <div class="w-full flex justify-between text-creme-700">
       <div class="ps-4 pe-4 pt-1 pb-1">
         <button @click="toggleNav()" class="font-semibold" aria-controls="navMenu" :aria-expanded="isNavExpanded.toString()">
@@ -34,6 +34,30 @@
       </div>
     </div>
   </header>
+  <header class="hidden lg:visible lg:flex fixed bg-creme-100 w-screen z-50 px-4 py-1">
+    <nav id="navMenu" class="flex-grow"
+    >
+      <ul class="flex flex-row justify-start gap-6">
+        <li v-for="route in menuRoutes" :key="route.path">
+          <NuxtLink class="hover:text-creme-700 text-xl" :to="localePath(route.path)" @click="handleRouting()">
+              {{ $t(`route.${route.name}`) }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+    <div class="relative">
+      <button @click="toggleLang()" class="hover:text-creme-700 text-xl">
+        {{ $t("header.language") }}
+      </button>
+      <ul v-if="isLangExpanded" class="absolute right-0 bg-creme-100 mt-2 p-2 border border-creme-700">
+        <li v-for="locale in locales" :key="locale.code" class="py-1 px-2">
+          <NuxtLink class="hover:text-creme-700 whitespace-nowrap" :to="switchLocalePath(locale.code)" @click="toggleLang()">
+            {{ locale.name }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
+  </header>
   <div class="w-full h-14 -z-50 bg-transparent"></div>
 </template>
 <script setup>
@@ -48,7 +72,7 @@ const localePath = useLocalePath();
 const isNavExpanded = ref(false);
 const isLangExpanded = ref(false);
 
-// Computed property to check if any menu is expanded
+// Computed property to check if any menu is expanded 
 const expanded = computed(() => {
   return isNavExpanded.value || isLangExpanded.value ? "expanded" : "";
 });
