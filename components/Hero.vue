@@ -3,41 +3,41 @@
     <!-- Actual hero content -->
     <div class="flex-grow flex items-center justify-center">
       <div
-        class="flex flex-col landscape:flex-row justify-center items-center space-y-5 landscape:space-x-10 landscape:mr-10"
+        class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-x-10 md:mr-10"
       >
         <!-- Portrait only  -->
         <div>
-          <h2 class="landscape:hidden text-lg text-center text-creme-700">
+          <h2 class="md:hidden text-lg text-center text-creme-700">
             {{ $t("hero.mc") }}
           </h2>
           <h1
-            class="landscape:hidden text-4xl font-bold text-center text-apricot-950 tracking-wider"
+            class="md:hidden text-4xl font-bold text-center text-apricot-950 tracking-wider"
           >
             {{ $t("hero.brand_name") }}
           </h1>
         </div>
         <!-- Image -->
-        <img
-          src="@/assets/images/Hero.webp"
+        <NuxtImg
+          src="/images/Hero.webp"
           :alt="$t('aria.heroPhoto')"
-          class="w-full landscape:max-w-[45vw] h-auto landscape:flex-1 portrait:px-8"
+          sizes="90vw md:45vw"
         />
         <!-- Landscape and partially Portrait-->
         <div
-          class="flex-1 flex flex-col justify-center items-center space-y-2 landscape:space-y-8"
+          class="flex-1 flex flex-col justify-center items-center space-y-2 md:space-y-8"
         >
-          <div class="hidden landscape:block">
+          <div class="hidden md:block">
             <h2 class="text-4xl text-center text-creme-700">
               {{ $t("hero.mc") }}
             </h2>
             <h1
-              class="text-3xl text-apricot-950 landscape:text-8xl font-bold text-center tracking-wider"
+              class="text-3xl text-apricot-950 md:text-8xl font-bold text-center tracking-wider"
             >
               {{ $t("hero.brand_name") }}
             </h1>
           </div>
           <h3
-            class="text-center text-xl text-apricot-950 tracking-tighter landscape:text-4xl"
+            class="text-center text-xl text-apricot-950 tracking-tighter md:text-4xl"
           >
             {{ $t("hero.brand_slogan") }}
           </h3>
@@ -52,19 +52,20 @@
     </div>
     <!-- Floral decoration -->
     <div
-      class="flex flex-row justify-between"
+      class="flex flex-row justify-between relative -top-20"
       aria-hidden="true"
     >
-      <img
-        src="@/assets/images/flower_border_side.webp"
+      <NuxtImg
+        src="/images/decoration/flower_border_side.webp"
         class="z-0 h-[25vh] w-auto max-w-1/2"
+        sizes="1vw"
       />
-      <img
-        src="@/assets/images/flower_border_side.webp"
+      <NuxtImg
+        src="/images/decoration/flower_border_side.webp"
         class="z-0 h-[25vh] w-auto max-w-1/2 transform scale-x-[-1]"
-      />
+        sizes="(max-width: 640px) 50vw, (max-width: 768px) 40vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
+        />
     </div>
-    <div class="h-100"></div>
   </main>
 </template>
 

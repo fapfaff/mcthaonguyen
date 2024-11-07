@@ -29,6 +29,8 @@
 </template>
 
 <script lang="ts" setup>
+import { NuxtImg } from '#build/components';
+
 const { t, locale } = useI18n();
 const route = useRoute();
 

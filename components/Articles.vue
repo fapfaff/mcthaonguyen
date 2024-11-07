@@ -1,5 +1,6 @@
 <template>
   <Swiper
+  v-if="data"
   class="w-full"
     :modules="[SwiperAutoplay, SwiperPagination]"
     :loop="true"
@@ -25,12 +26,20 @@
     }"
   >
    
-    <SwiperSlide v-for="article in [1,2,3,4].values()">
-        <Card class="w-60">
-            <img src="/images/testimonials/NhuDuy.webp" :alt="$t('aria.heroPhoto')" />
-            <h3>Wie läuft eine deutsche Hochzeit ab?</h3>
+    <SwiperSlide v-for="article in data.values()">
+        <Card class="w-60" @click="navigateTo(localePath(`/article/${article.slug}`))">
+            <NuxtImg :src="article.img" :alt="article.imgAlt" />
+            <h3>{{ article.headline }}</h3>
         </Card>
     </SwiperSlide>
     <div class="swiper-pagination"></div>
   </Swiper>
 </template>
+<script setup lang="ts">
+const { locale } = useI18n();
+const  localePath  = useLocalePath()
+
+const { data } = await useAsyncData("articles", () =>
+  queryContent(`${locale.value}/articles`).find()
+);
+</script>

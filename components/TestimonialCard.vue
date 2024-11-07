@@ -2,7 +2,7 @@
   <Card>
     <div class="h-full flex flex-col">
       <div v-if="testimonial.img" class="pb-5 flex justify-center w-full">
-        <img
+        <NuxtImg
           :alt="`${$t('aria.photoOf')} '${testimonial.title}'`"
           :src="testimonial.img"
           class="object-cover aspect-auto rounded-sm"

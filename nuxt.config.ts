@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@nuxt/image",
     "@nuxthq/studio",
-    "@nuxtjs/robots"
+    "@nuxtjs/robots",
   ],
 
   i18n: {
