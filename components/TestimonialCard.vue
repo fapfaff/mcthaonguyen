@@ -6,6 +6,7 @@
           :alt="`${$t('aria.photoOf')} '${testimonial.title}'`"
           :src="testimonial.img"
           class="object-cover aspect-auto rounded-sm"
+          sizes="320px md:574px"
         />
       </div>
       <div class="flex-grow">

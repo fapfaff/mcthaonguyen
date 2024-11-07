@@ -32,7 +32,7 @@
               :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
               :src="testimonial.img"
               class="w-100 object-cover aspect-3/2"
-              size="100vw"
+              sizes="320px md:574px"
             />
         </div>
         <div class="text-apricot-950">
