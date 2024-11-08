@@ -14,7 +14,14 @@
                 <input v-model="formData.botcheck" type="checkbox" name="botcheck" id="" style="display: none;" aria-hidden="true" />
 
                 <div class="mt-1">
-                    <button type="submit" class="rounded border-creme-700 border-2 bg-creme-700 text-creme-50 font-semibold tracking-wider p-1 box-border w-full hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900 focus:border-2">
+                    <label for="submitBtn" class="sr-only">{{ t('contact.send') }}</label>
+                    <button
+                        id="submitBtn" 
+                        type="submit"
+                        :aria-label="$t('contact.send')"
+                        :disabled="loading"
+                        :aria-busy="loading"
+                        class="rounded border-creme-700 border-2 bg-creme-700 text-creme-50 font-semibold tracking-wider p-1 box-border w-full hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900 focus:border-2">
                         <span v-if="!loading">{{ $t('contact.send') }}</span>
                         <span v-else role="progressbar" aria-label="Loading... the form is being submitted.">
                             <svg aria-hidden="true" alt="loading" class="inline w-4 h-4 ml-2 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

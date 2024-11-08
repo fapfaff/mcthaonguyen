@@ -8,16 +8,18 @@
         <div class="flex flex-row justify-center gap-14 mb-2">
           <a :href="config.socials.facebook" :aria-label="$t('aria.contactViaFacebook')">
             <NuxtImg
-              aria-hidden="true"
               src="/images/icons/socials/Facebook_Logo.webp"
+              alt=""
+              aria-hidden="true"
               width="48"
               height="48"
             />
           </a>
           <a :href="config.socials.tiktok" :aria-label="$t('aria.contactViaTiktok')">
             <NuxtImg
-              aria-hidden="true"
               src="/images/icons/socials/TikTok_Logo.webp"
+              alt=""
+              aria-hidden="true"
               width="48"
               height="48"
             />
@@ -26,8 +28,9 @@
             :href="config.socials.instagram"
             :aria-label="$t('aria.contactViaInstagram')">
             <NuxtImg
-              aria-hidden="true"
               src="/images/icons/socials/Instagram_Logo.webp"
+              alt=""
+              aria-hidden="true"
               width="48"
               height="48"
             />

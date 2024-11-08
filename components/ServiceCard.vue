@@ -2,6 +2,7 @@
     <Card>
         <div class="flex flex-col items-center pt-3 w-100">
             <NuxtImg :src="service.img" 
+                alt=""
                 aria-hidden="true"
                 width="40" height="40"
             />

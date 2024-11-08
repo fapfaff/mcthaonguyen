@@ -7,9 +7,9 @@
       >
         <!-- Portrait only  -->
         <div>
-          <h2 class="md:hidden text-lg text-center text-creme-700">
+          <span class="md:hidden text-lg text-center text-creme-700">
             {{ $t("hero.mc") }}
-          </h2>
+          </span>
           <h1
             class="md:hidden text-4xl font-bold text-center text-apricot-950 tracking-wider"
           >
@@ -27,20 +27,20 @@
           class="flex-1 flex flex-col justify-center items-center space-y-2 md:space-y-8"
         >
           <div class="hidden md:block">
-            <h2 class="text-4xl text-center text-creme-700">
+            <span class="text-4xl text-center text-creme-700">
               {{ $t("hero.mc") }}
-            </h2>
+            </span>
             <h1
               class="text-3xl text-apricot-950 md:text-8xl font-bold text-center tracking-wider"
             >
               {{ $t("hero.brand_name") }}
             </h1>
           </div>
-          <h3
+          <span
             class="text-center text-xl text-apricot-950 tracking-tighter md:text-4xl"
           >
             {{ $t("hero.brand_slogan") }}
-          </h3>
+          </span>
           <NuxtLink
             :to="localePath(contactRoute.path)"
             class="btn-primary"
@@ -57,11 +57,15 @@
     >
       <NuxtImg
         src="/images/decoration/flower_border_side.webp"
+        alt=""
+        aria-hidden="true"
         class="z-0 h-[25vh] w-auto max-w-1/2"
         sizes="1vw"
       />
       <NuxtImg
         src="/images/decoration/flower_border_side.webp"
+        alt=""
+        aria-hidden="true"
         class="z-0 h-[25vh] w-auto max-w-1/2 transform scale-x-[-1]"
         sizes="(max-width: 640px) 50vw, (max-width: 768px) 40vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
         />
