@@ -1,5 +1,5 @@
 export const useSeo = (metaKey: string = "default") => {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
 
   const config = useAppConfig();
 
@@ -7,6 +7,9 @@ export const useSeo = (metaKey: string = "default") => {
 
   useHead({
     title: t(`meta.${metaKey}.title`),
+    htmlAttrs: {
+      lang: locale.value,
+    },
     meta: [
       {
         name: "robots",
