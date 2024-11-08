@@ -2,13 +2,13 @@
         <Card>
             <form @submit.prevent="submitForm">
                 <div class="w-100 mb-2">
-                    <label id="emailLabel" class="block text-sm mb-1 tracking-widest " for="email">{{ $t('contact.email').toUpperCase() }}</label>
-                    <input v-model="formData.email" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800" id="email" type="email" aria-labelledby="emailLabel" required>
+                    <label id="emailLabel" class="block text-sm mb-1 tracking-widest" for="email">{{ $t('contact.email').toUpperCase() }}</label>
+                    <input v-model="formData.email" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800" id="email" type="email" required>
                 </div>
     
                <div class="w-100 mb-2">
                     <label id="messageLabel" class="block text-sm mb-1 tracking-widest" for="message">{{ $t('contact.message').toUpperCase() }}</label>
-                    <textarea v-model="formData.message" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800 h-40" id="message" name="message" rows="10" aria-labelledby="messageLabel" required></textarea>          
+                    <textarea v-model="formData.message" class="rounded border-2 border-creme-400 bg-creme-50 text-apricot-950 w-full py-2 px-3 leading-tight focus:outline-none focus:border-creme-800 h-40" id="message" name="message" rows="10" required></textarea>          
                 </div>
 
                 <input v-model="formData.botcheck" type="checkbox" name="botcheck" id="" style="display: none;" aria-hidden="true" />

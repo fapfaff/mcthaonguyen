@@ -18,7 +18,7 @@
         <button
           class="rounded-full border-2 bg-creme-300 border-creme-700 text-blue-950 mt-4 hover:bg-creme-400 px-6 py-1"
           @click="open"
-          :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
+          :aria-label="`${$t('aria.readFullTestimonial')} ${testimonial.title}`"
         >
           {{ $t('testimonials.readMore') }}
         </button>

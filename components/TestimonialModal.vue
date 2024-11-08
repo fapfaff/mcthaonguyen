@@ -29,7 +29,7 @@
               frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <NuxtImg
               v-if="!testimonial.video && testimonial.img"
-              :aria-label="`${'aria.readFullTestimonial'} ${testimonial.title}`"
+              :aria-label="`${'aria.photoOf'} ${testimonial.title}`"
               :src="testimonial.img"
               class="w-100 object-cover aspect-3/2"
               sizes="320px md:574px"
