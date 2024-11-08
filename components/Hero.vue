@@ -52,7 +52,7 @@
     </div>
     <!-- Floral decoration -->
     <div
-      class="flex flex-row justify-between relative -top-20"
+      class="flex flex-row justify-between relative -top-5"
       aria-hidden="true"
     >
       <NuxtImg
