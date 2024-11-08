@@ -6,12 +6,12 @@
         class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-x-10 md:mr-10"
       >
         <!-- Portrait only  -->
-        <div>
-          <span class="md:hidden text-lg text-center text-creme-700">
+        <div class="flex flex-col justify-center items-center space-y-2">
+          <span class="md:hidden text-lg text-center text-apricot-950">
             {{ $t("hero.mc") }}
           </span>
           <h1
-            class="md:hidden text-4xl font-bold text-center text-apricot-950 tracking-wider"
+            class="md:hidden text-4xl font-bold text-center text-creme-700 tracking-wider"
           >
             {{ $t("hero.brand_name") }}
           </h1>
@@ -26,12 +26,12 @@
         <div
           class="flex-1 flex flex-col justify-center items-center space-y-2 md:space-y-8"
         >
-          <div class="hidden md:block">
-            <span class="text-4xl text-center text-creme-700">
+          <div class="hidden md:flex flex-col justify-center items-center space-y-2">
+            <span class="text-4xl text-center text-apricot-950">
               {{ $t("hero.mc") }}
             </span>
             <h1
-              class="text-3xl text-apricot-950 md:text-8xl font-bold text-center tracking-wider"
+              class="text-3xl text-creme-700 md:text-8xl font-bold text-center tracking-wider"
             >
               {{ $t("hero.brand_name") }}
             </h1>
