@@ -3,6 +3,10 @@ export default {
   content: [],
   theme: {
     extend: {
+      textShadow: {
+        "black-a1/2": "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        "black-a2/3": "1px 1px 2px rgba(0, 0, 0, 0.66)",
+      },
       colors: {
         creme: {
           50: "#FDFBF7",
@@ -82,5 +86,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@designbycode/tailwindcss-text-shadow")],
 };
