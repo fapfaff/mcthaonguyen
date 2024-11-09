@@ -26,6 +26,7 @@
     "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/robots": "^4.1.11",
+    "@nuxtjs/sitemap": "^6.1.5",
     "nuxt": "^3.14.159"
   },
   "packageManager": "pnpm@9.1.0"

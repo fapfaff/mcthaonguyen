@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxthq/studio",
     "@nuxtjs/robots",
+    "@nuxtjs/sitemap"
   ],
 
   i18n: {
