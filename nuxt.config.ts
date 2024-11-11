@@ -38,6 +38,13 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
   },
 
+  image: {
+    provider: "ipx",
+    ipx: {
+      maxAge: 60 * 60 * 24,
+    },
+  },
+
   googleFonts: {
     families: {
       Roboto: true,
