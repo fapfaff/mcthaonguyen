@@ -1,3 +1,5 @@
+import textShadow from "@designbycode/tailwindcss-text-shadow";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [],
@@ -86,5 +88,5 @@ export default {
       },
     },
   },
-  plugins: [require("@designbycode/tailwindcss-text-shadow")],
+  plugins: [textShadow],
 };
