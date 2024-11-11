@@ -16,19 +16,22 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxthq/studio",
     "@nuxtjs/robots",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
   ],
 
   i18n: {
+    baseUrl: process.env.BASE_URL,
     strategy: "prefix",
     locales: [
       {
         code: "de",
         name: "Deutsch",
+        language: "de-DE",
       },
       {
         code: "vn",
         name: "Tiếng Việt",
+        language: "vi-VN",
       },
     ],
     defaultLocale: "de",

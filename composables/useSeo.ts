@@ -5,12 +5,18 @@ export const useSeo = (metaKey: string = "default") => {
 
   const image = `${config.baseUrl}/images/thao_nguyen.webp`;
 
+  const i18nHead = useLocaleHead({
+    addSeoAttributes: true,
+  });
+
   useHead({
     title: t(`meta.${metaKey}.title`),
     htmlAttrs: {
-      lang: locale.value,
+      lang: i18nHead.value.htmlAttrs!.lang,
     },
+    link: [...(i18nHead.value.link || [])],
     meta: [
+      ...(i18nHead.value.meta || []),
       {
         name: "robots",
         content: "index, follow",
