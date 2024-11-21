@@ -9,7 +9,7 @@
           :options="fireworksOptions"
           class="fireworks-container"
         />
-        <div class="modal flex flex-col max-w-2xl my-12 mx-auto p-6 bg-creme-200 rounded-lg text-center items-center">
+        <div class="modal flex flex-col max-w-2xl absolute top-1/4 mx-auto p-6 bg-creme-200 rounded-lg text-center items-center">
           <span class="text-4xl pb-4"> {{ $t("birthday.headline")  }}</span>
           <span class="text-xl mb-2"> {{ $t("birthday.havefun")  }}</span>
           <button @click.self="() => emit('close')" class="btn-primary">
