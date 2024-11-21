@@ -11,7 +11,7 @@
             {{ $t("hero.mc") }}
           </span>
           <h1
-            class="md:hidden text-4xl font-bold text-center text-creme-700 tracking-wider text-shadow"
+            class="md:hidden text-4xl font-bold text-center text-creme-700 tracking-wider"
           >
             {{ $t("hero.brand_name") }}
           </h1>
@@ -31,7 +31,7 @@
               {{ $t("hero.mc") }}
             </span>
             <h1
-              class="text-3xl text-creme-700 md:text-8xl font-bold text-center tracking-wider text-shadow"
+              class="text-3xl text-creme-700 md:text-8xl font-bold text-center tracking-wider"
             >
               {{ $t("hero.brand_name") }}
             </h1>
@@ -81,7 +81,7 @@
 }
 
 .btn-primary {
-  @apply rounded-full border-2 border-creme-700 bg-creme-700 text-white font-semibold tracking-wider px-12 py-1 w-fit hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900;
+  @apply rounded-full border-2 border-creme-700 bg-creme-700 text-creme-50 font-semibold tracking-wider px-12 py-1 w-fit hover:bg-creme-800 hover:border-creme-800 focus:outline-none focus:border-creme-900;
 }
 </style>
 

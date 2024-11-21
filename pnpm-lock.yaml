@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@designbycode/tailwindcss-text-shadow':
-        specifier: ^2.1.6
-        version: 2.1.6(tailwindcss@3.4.14)
       '@fireworks-js/vue':
         specifier: ^2.10.8
         version: 2.10.8(vue@3.5.12(typescript@5.6.3))
@@ -229,11 +226,6 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       postcss-selector-parser: ^7.0.0
-
-  '@designbycode/tailwindcss-text-shadow@2.1.6':
-    resolution: {integrity: sha512-67Kds0Qy3fc2Mbc/UmkgtI8In2q56xOP+uklskKg0TOrQy0/E6fnkPvY7PuM+aA2mGbsI3rQ7WExkocbi2dwmw==}
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || >=3.0.0-alpha.1'
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -4581,10 +4573,6 @@ snapshots:
   '@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.0.0)':
     dependencies:
       postcss-selector-parser: 7.0.0
-
-  '@designbycode/tailwindcss-text-shadow@2.1.6(tailwindcss@3.4.14)':
-    dependencies:
-      tailwindcss: 3.4.14
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
