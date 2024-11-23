@@ -1,5 +1,4 @@
 <template>
-  <BirthdayOverlay v-if="showBirthdayOverlay" @close="handleClose"></BirthdayOverlay>
   <Hero></Hero>
   <div class="ms-4 me-4">
     <Heading
@@ -71,11 +70,6 @@ export default {
 
     const headerHeight = ref(0);
 
-    const showBirthdayOverlay = ref(true);
-    const handleClose = () => {
-      showBirthdayOverlay.value = false;
-    };
-
     onMounted(() => {
       const header = document.querySelector("header");
       if (header) {
@@ -89,8 +83,6 @@ export default {
 
     return {
       headerHeight,
-      showBirthdayOverlay,
-      handleClose,
     };
   },
 };
