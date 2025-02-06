@@ -1,0 +1,67 @@
+{
+  "fullName": "Thảo Nguyên",
+  "error": {
+    "header": "Oops! An error has occurred",
+    "backToHome": "Back to home",
+    "articleNotFound": "This article does not exist"
+  },
+  "header": {
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "route": {
+    "home": "Home",
+    "testimonials": "Testimonials",
+    "services": "Services",
+    "about_me": "About me",
+    "contact": "Contact",
+    "legalDisclosure": "Legal Disclosure",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "hero": {
+    "brand_name": "Thảo Nguyên",
+    "brand_slogan": "Two languages – one unforgettable celebration",
+    "contact_now": "Contact now!",
+    "mc": "Host"
+  },
+  "testimonials": {
+    "readMore": "Read more"
+  },
+  "contact": {
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "orViaSocials": "Or reach out to me here!",
+    "messageSentSuccess": "Message has been sent!",
+    "messageSentError": "Error sending the message. Please try again later!",
+    "emailSubject": "You have a new message",
+    "emailFromName": "MC Thao Nguyen"
+  },
+  "articles": {
+    "portraitThaoNguyen": "Portrait of Thảo Nguyên",
+    "aboutAuthor": "About the Author",
+    "authorDescription": "Thảo Nguyên, born in Hanoi, Vietnam, moved to Germany, where she now works as a bilingual host (MC) and wedding speaker for Vietnamese couples. With her deep connection to both cultures, she helps couples create unique wedding ceremonies by blending Vietnamese traditions with German customs.",
+    "publishedAt": "Published on"
+  },
+  "aria": {
+    "photoOf": "Photo of",
+    "readFullTestimonial": "Read the full testimonial from",
+    "closeTestimonial": "Close the testimonial",
+    "contactViaInstagram": "Contact me via Instagram",
+    "contactViaTiktok": "Contact me via TikTok",
+    "contactViaFacebook": "Contact me via Facebook",
+    "heroPhoto": "Portrait of Thảo Nguyên working as a host."
+  },
+  "meta": {
+    "default": {
+      "title": "Wedding Hosting & Bilingual Event Moderation in German & Vietnamese – Thảo Nguyên",
+      "keywords": "MC, Wedding Hosting, Wedding Speaker, Bilingual Wedding Speaker, Host, Event, Wedding, Vietnamese, German, German-Vietnamese, Bilingual, Celebration, Gala, Ceremony, Birthday, Vietnamese-German, Bilingual Wedding Speaker for Weddings, Wedding MC Vietnam-Germany, Ceremony Leader for Vietnamese Weddings, Wedding MC in German and Vietnamese, Bilingual Event Hosting, Wedding Speaker in Berlin for Vietnamese Weddings, Gala and Event Host",
+      "description": "Professional hosting and wedding ceremonies for weddings, birthdays, gala evenings, and more. Thảo Nguyên hosts in German and Vietnamese, ensuring all guests are linguistically and emotionally engaged – for unforgettable events.",
+      "ogTitle": "Wedding Hosting & Bilingual Event Moderation in German & Vietnamese – Thảo Nguyên",
+      "ogDescription": "Professional hosting and wedding ceremonies for weddings, birthdays, gala evenings, and more. Thảo Nguyên hosts in German and Vietnamese, ensuring all guests are linguistically and emotionally engaged – for unforgettable events.",
+      "ogSiteName": "MC Thảo Nguyên",
+      "twitterTitle": "Wedding Hosting & Bilingual Event Moderation in German & Vietnamese – Thảo Nguyên",
+      "twitterDescription": "Professional hosting and wedding ceremonies for weddings, birthdays, gala evenings, and more. Thảo Nguyên hosts in German and Vietnamese, ensuring all guests are linguistically and emotionally engaged – for unforgettable events."
+    }
+  }
+}

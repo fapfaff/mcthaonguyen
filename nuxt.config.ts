@@ -33,6 +33,11 @@ export default defineNuxtConfig({
         name: "Tiếng Việt",
         language: "vi-VN",
       },
+      {
+        code: "en",
+        name: "English",
+        language: "en-US",
+      },
     ],
     defaultLocale: "de",
     detectBrowserLanguage: false,
@@ -77,7 +82,7 @@ export default defineNuxtConfig({
 });
 
 function getArticleRoutes() {
-  const locales = ["de", "vn"];
+  const locales = ["de", "vn", "en"];
   const routes: string[] = [];
 
   locales.forEach((locale) => {
