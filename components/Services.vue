@@ -30,7 +30,11 @@
 </style>
 <script setup>
 const { locale } = useI18n();
-const { data } = await useAsyncData("services", () =>
+const { data, refresh } = await useAsyncData("services", () =>
   queryContent(`${locale.value}/services`).find()
 );
+
+watchEffect(() => {
+  refresh(); // This will trigger a refresh whenever the locale changes
+});
 </script>

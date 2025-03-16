@@ -54,7 +54,11 @@ h1 {
 </style>
 <script setup>
 const { locale } = useI18n();
-const { data } = await useAsyncData("testimonials", () =>
+const { data, refresh  } = await useAsyncData("testimonials", () =>
   queryContent(`${locale.value}/testimonials`).find()
 );
+
+watchEffect(() => {
+  refresh(); // This will trigger a refresh whenever the locale changes
+});
 </script>

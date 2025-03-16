@@ -39,7 +39,11 @@
 const { locale } = useI18n();
 const  localePath  = useLocalePath()
 
-const { data } = await useAsyncData("articles", () =>
+const { data, refresh } = await useAsyncData("articles", () =>
   queryContent(`${locale.value}/articles`).find()
 );
+
+watchEffect(() => {
+  refresh(); // This will trigger a refresh whenever the locale changes
+});
 </script>
