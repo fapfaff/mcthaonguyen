@@ -6,7 +6,11 @@
 </template>
 <script setup lang="ts">
 const { locale } = useI18n();
-const { data } = await useAsyncData("aboutme", () =>
+const { data, refresh } = await useAsyncData("aboutme", () =>
   queryContent(`${locale.value}/about_me`).find()
 );
+
+watchEffect(() => {
+  refresh(); // This will trigger a refresh whenever the locale changes
+});
 </script>
