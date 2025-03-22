@@ -29,12 +29,10 @@
 </template>
 
 <script lang="ts" setup>
-import { NuxtImg } from '#build/components';
-
 const { t, locale } = useI18n();
 const route = useRoute();
 
-const { data } = await useAsyncData("article", async () => {
+const { data, refresh } = await useAsyncData("article", async () => {
   const result = await queryContent(`${locale.value}/articles`)
     .where({ slug: route.params.slug })
     .findOne();
@@ -71,4 +69,8 @@ const formatDate = (dateString: string | undefined) => {
     day: "numeric",
   }).format(date);
 };
+
+watchEffect(() => {
+  refresh();
+});
 </script>
