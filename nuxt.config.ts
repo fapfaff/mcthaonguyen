@@ -79,6 +79,11 @@ export default defineNuxtConfig({
       routes: getArticleRoutes(),
     },
   },
+
+  site: {
+    url: process.env.BASE_URL,
+    name: "MC Thao Nguyen",
+  },
 });
 
 function getArticleRoutes() {
