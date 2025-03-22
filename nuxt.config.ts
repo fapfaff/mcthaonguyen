@@ -2,6 +2,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
+const BASE_URL = process.env.BASE_URL || "https://mcthaonguyen.de";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -20,7 +22,7 @@ export default defineNuxtConfig({
   ],
 
   i18n: {
-    baseUrl: process.env.BASE_URL,
+    baseUrl: BASE_URL,
     strategy: "prefix",
     locales: [
       {
@@ -81,7 +83,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.BASE_URL,
+    url: BASE_URL,
     name: "MC Thao Nguyen",
   },
 });
